@@ -1,0 +1,42 @@
+{
+  "id": "titanes",
+  "nombre": "Titans Mod",
+  "version": "2.0.0",
+  "autor": "Oliver",
+  "categorias": [
+    "aventura",
+    "jefes"
+  ],
+  "resumen": "Jefes titánicos gigantes, el Titán Kat cósmico como jefe final y nuevas armaduras y herramientas legendarias.",
+  "icono": "https://kikerayo.github.io/KatMods/img/titanes/icon.png",
+  "descarga": "https://kikerayo.github.io/KatMods/descargas/titanes-2.0.0.jar",
+  "subtitulo": "Titanes: La Furia de Kat",
+  "descripcion": "Jefes titánicos gigantes, el Titán Kat cósmico como jefe final, y nuevas armaduras y herramientas.",
+  "loader": "fabric",
+  "requisitos": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "sugiere": [],
+  "licencia": "All-Rights-Reserved",
+  "novedades": [
+    "Titanes: Gorgoth, Osario, la Tejedora Abismal y el Rey Ceniza",
+    "Jefe final: Titán Kat, la Gata Cósmica",
+    "Pepinus: Gato Pepino, Gato Pepinus y Pepinus Dios",
+    "Equipo: sets de Titanita y Cósmico, Bastón Láser Kat"
+  ],
+  "totales": {
+    "bloques": 0,
+    "items": 35,
+    "entidades": 9
+  },
+  "archivo": {
+    "nombre": "titanes-2.0.0.jar",
+    "url": "https://kikerayo.github.io/KatMods/descargas/titanes-2.0.0.jar",
+    "bytes": 1014358,
+    "sha256": "2b757d346c80ce4fbf1bc37426f98e0caecf45e9ee6033f9512d2bb7b08ca5cb"
+  },
+  "contenido": "https://kikerayo.github.io/KatMods/api/mods/titanes/contenido.json"
+}

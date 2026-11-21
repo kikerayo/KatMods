@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KatMods API</title>
+<meta name="description" content="API pública y gratuita de KatMods: información de los mods de Oliver en JSON.">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Nunito:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0d0820;--card:#1b1140;--card-2:#24174f;--line:#3a2a72;--text:#f2ecff;--muted:#b5a8de;--pink:#ff5fd2;--violet:#9b5cff;--cyan:#5fe3ff;--grass:#6fd13a}
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--text);background:var(--bg);font-family:"Nunito",system-ui,sans-serif;line-height:1.55;
+    background-image:radial-gradient(1200px 600px at 80% -10%,#3b1a7a55,transparent 60%),radial-gradient(900px 500px at -10% 30%,#a0268a33,transparent 60%);background-attachment:fixed;overflow-x:hidden}
+  a{color:var(--cyan)}
+  .wrap{max-width:960px;margin:0 auto;padding-inline:16px}
+  h1,h2,h3{font-family:"Pixelify Sans",system-ui,sans-serif;letter-spacing:.5px}
+  nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:#0d0820cc;border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:12px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font:700 22px "Pixelify Sans"}
+  nav .brand img{width:36px;height:36px;object-fit:contain}
+  nav .links{margin-left:auto;display:flex;gap:18px;font-weight:600;font-size:15px}
+  nav .links a{text-decoration:none;color:var(--muted)} nav .links a:hover,nav .links a.on{color:var(--text)}
+  header{padding-block:48px 16px}
+  header h1{font-size:clamp(40px,8vw,72px);line-height:1;margin:0 0 12px;background:linear-gradient(90deg,var(--pink),var(--violet) 50%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+  header p{color:var(--muted);font-size:18px;margin:0 0 18px;max-width:36em}
+  .pills{display:flex;gap:8px;flex-wrap:wrap}
+  .pill{font-size:13px;font-weight:800;padding:5px 12px;border-radius:999px;background:#ffffff10;border:1px solid var(--line);color:var(--muted)}
+  .pill b{color:var(--grass)}
+  code,pre,.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+  code{background:#ffffff14;padding:1px 6px;border-radius:6px;font-size:.9em}
+  .base{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-block:24px 8px}
+  .base span{color:var(--muted);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+  .base code{background:none;padding:0;font-size:15px;overflow-wrap:anywhere}
+  section{padding-block:22px}
+  h2{font-size:30px;margin:0 0 14px}
+  .ep{background:linear-gradient(180deg,var(--card-2),var(--card));border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px}
+  .ep-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .get{font:700 12px "JetBrains Mono";background:#6fd13a22;color:var(--grass);border:1px solid #6fd13a66;padding:3px 8px;border-radius:6px}
+  .path{font:600 16px "JetBrains Mono";overflow-wrap:anywhere}
+  .ep p{margin:10px 0;color:#ddd3ff}
+  .ep select{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font:600 14px "JetBrains Mono"}
+  .btn{margin-left:auto;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;font-weight:800;border:0;cursor:pointer;font-size:14px;font-family:inherit;background:linear-gradient(90deg,var(--pink),var(--violet));color:#fff}
+  .btn:hover{filter:brightness(1.1)}
+  pre{margin:12px 0 0;background:#08051a;border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto;max-height:380px;font-size:13px;color:#e6dcff}
+  pre:empty{display:none}
+  .k{color:var(--pink)} .s{color:#a9f08a} .n{color:var(--cyan)}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:800}
+  td:first-child{font-family:"JetBrains Mono";color:var(--pink);white-space:nowrap}
+  .table-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px}
+  footer{border-top:1px solid var(--line);margin-top:30px;padding-block:24px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/logo.webp" alt="">KatMods</a>
+    <div class="links">
+      <a href="./#catalogo">Catálogo</a>
+      <a class="on" href="api.html">API</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap">
+  <h1>KatMods API</h1>
+  <p>Toda la información de los mods de Oliver en JSON: versiones, descargas, requisitos y la lista completa de bloques, ítems y entidades. Gratis y sin clave.</p>
+  <div class="pills">
+    <span class="pill"><b>●</b> Sin API key</span>
+    <span class="pill">Solo GET</span>
+    <span class="pill">CORS abierto</span>
+    <span class="pill">JSON UTF-8</span>
+  </div>
+  <div class="base"><span>URL base</span><code id="base">https://kikerayo.github.io/KatMods/api</code></div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Endpoints</h2>
+
+    <div class="ep">
+      <div class="ep-head"><span class="get">GET</span><span class="path">/index.json</span><button class="btn" data-url="api/index.json">▶ Probar</button></div>
+      <p>Información de la API y la lista de endpoints.</p>
+      <pre></pre>
+    </div>
+
+    <div class="ep">
+      <div class="ep-head"><span class="get">GET</span><span class="path">/mods.json</span><button class="btn" data-url="api/mods.json">▶ Probar</button></div>
+      <p>Todos los mods del catálogo, con su resumen, icono y enlace de descarga.</p>
+      <pre></pre>
+    </div>
+
+    <div class="ep">
+      <div class="ep-head"><span class="get">GET</span><span class="path">/mods/<select class="mod-id" aria-label="ID del mod"><option>mcplus</option><option>titanes</option></select>.json</span><button class="btn" data-url="api/mods/{id}.json">▶ Probar</button></div>
+      <p>Detalle de un mod: descripción, requisitos, novedades, totales y el archivo <code>.jar</code> con su tamaño y <code>sha256</code>.</p>
+      <pre></pre>
+    </div>
+
+    <div class="ep">
+      <div class="ep-head"><span class="get">GET</span><span class="path">/mods/<select class="mod-id" aria-label="ID del mod"><option>mcplus</option><option>titanes</option></select>/contenido.json</span><button class="btn" data-url="api/mods/{id}/contenido.json">▶ Probar</button></div>
+      <p>Todos los bloques, ítems y entidades del mod con su nombre en español (y su textura si está disponible).</p>
+      <pre></pre>
+    </div>
+  </section>
+
+  <section>
+    <h2>IDs de los mods</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>id</th><th>Mod</th><th>Versión</th></tr></thead>
+        <tbody>
+          <tr><td>mcplus</td><td>Minecraft Plus</td><td>0.6.1</td></tr>
+          <tr><td>titanes</td><td>Titans Mod</td><td>2.0.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ejemplo</h2>
+    <p style="color:var(--muted);margin-top:0">Saber la última versión de Titans Mod desde JavaScript:</p>
+<pre class="mono" style="display:block">fetch("https://kikerayo.github.io/KatMods/api/mods/titanes.json")
+  .then(r =&gt; r.json())
+  .then(mod =&gt; console.log(mod.nombre, mod.version, mod.descarga));</pre>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">KatMods API · Mods hechos por <b>Oliver</b> · No es un producto oficial de Minecraft.</div>
+</footer>
+
+<script>
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+  function color(json){
+    return esc(json).replace(/("(?:\\.|[^"\\])*")(\s*:)?|\b(-?\d+(?:\.\d+)?|true|false|null)\b/g,
+      (m, str, colon, num) => str ? (colon ? `<span class="k">${str}</span>${colon}` : `<span class="s">${str}</span>`) : `<span class="n">${num}</span>`);
+  }
+  document.querySelectorAll('.ep .btn').forEach(btn => btn.addEventListener('click', async () => {
+    const ep = btn.closest('.ep'), pre = ep.querySelector('pre'), sel = ep.querySelector('.mod-id');
+    const url = btn.dataset.url.replace('{id}', sel ? sel.value : '');
+    if (pre.textContent && pre.dataset.url === url){ pre.textContent = ''; pre.dataset.url = ''; return; }
+    pre.textContent = 'Cargando…';
+    try {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      pre.innerHTML = color(JSON.stringify(await r.json(), null, 2));
+      pre.dataset.url = url;
+    } catch (e) { pre.textContent = 'Error: ' + e.message; }
+  }));
+</script>
+</body>
+</html>

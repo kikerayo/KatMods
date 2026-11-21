@@ -1,0 +1,11 @@
+{
+  "nombre": "KatMods API",
+  "version": "1",
+  "autor": "Oliver",
+  "docs": "https://kikerayo.github.io/KatMods/api.html",
+  "endpoints": {
+    "mods": "https://kikerayo.github.io/KatMods/api/mods.json",
+    "mod": "https://kikerayo.github.io/KatMods/api/mods/{id}.json",
+    "contenido": "https://kikerayo.github.io/KatMods/api/mods/{id}/contenido.json"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "mcplus",
+  "nombre": "Minecraft Plus",
+  "version": "0.6.1",
+  "autor": "Oliver",
+  "categorias": [
+    "aventura",
+    "tecnologia",
+    "jefes"
+  ],
+  "resumen": "El mod universal: añade de todo a Minecraft, desde el End y el espacio hasta tecnología, armas, comida, gatos y desafíos.",
+  "icono": "https://kikerayo.github.io/KatMods/img/mcplus/icon.png",
+  "descarga": "https://kikerayo.github.io/KatMods/descargas/mcplus-0.6.1.jar",
+  "descripcion": "El mod universal: End Update, Space Update, Update 3 (armas, tech, Lord Ender, GOD) y la MEGA EXPANSIÓN (5 reinos, dimensiones de bolsillo, gatos, frutas, pepinillos, sacos, lentes, pociones, consola con robot, Wither Storm, desafíos y logros).",
+  "loader": "fabric",
+  "requisitos": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "sugiere": [
+    "titanes"
+  ],
+  "licencia": "All-Rights-Reserved",
+  "novedades": [
+    "End Update: Cristal del Vacío, armadura y herramientas del Vacío",
+    "Space Update: cohetes, traje espacial y planetas",
+    "Update 3: armas, tecnología, Lord Ender y GOD",
+    "Mega Expansión: 5 reinos, dimensiones de bolsillo, Wither Storm, consola con robot y más"
+  ],
+  "totales": {
+    "bloques": 57,
+    "items": 293,
+    "entidades": 92
+  },
+  "archivo": {
+    "nombre": "mcplus-0.6.1.jar",
+    "url": "https://kikerayo.github.io/KatMods/descargas/mcplus-0.6.1.jar",
+    "bytes": 1607205,
+    "sha256": "f6654855d2b4264c70caa3e679b2784364b659cf9c18e988e995f89da7624cf1"
+  },
+  "contenido": "https://kikerayo.github.io/KatMods/api/mods/mcplus/contenido.json"
+}

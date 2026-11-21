@@ -1,0 +1,1794 @@
+{
+  "mod": "mcplus",
+  "bloques": [
+    {
+      "id": "mcplus:acero_boveda",
+      "nombre": "Acero de Bóveda"
+    },
+    {
+      "id": "mcplus:altar_desafios",
+      "nombre": "Altar de Desafíos"
+    },
+    {
+      "id": "mcplus:arena_marciana",
+      "nombre": "Arena Marciana"
+    },
+    {
+      "id": "mcplus:azufre_venus",
+      "nombre": "Azufre de Venus"
+    },
+    {
+      "id": "mcplus:baldosa_laboratorio",
+      "nombre": "Baldosa de Laboratorio"
+    },
+    {
+      "id": "mcplus:bizcocho",
+      "nombre": "Bizcocho"
+    },
+    {
+      "id": "mcplus:bloque_caramelo",
+      "nombre": "Bloque de Caramelo"
+    },
+    {
+      "id": "mcplus:bloque_codigo",
+      "nombre": "Bloque de Código"
+    },
+    {
+      "id": "mcplus:bloque_digital",
+      "nombre": "Bloque Digital"
+    },
+    {
+      "id": "mcplus:bloque_dimensional",
+      "nombre": "Bloque Dimensional"
+    },
+    {
+      "id": "mcplus:bloque_dimensional_ampliado",
+      "nombre": "Bloque Dimensional Ampliado"
+    },
+    {
+      "id": "mcplus:bloque_dimensional_giga",
+      "nombre": "Bloque Dimensional GIGA"
+    },
+    {
+      "id": "mcplus:bloque_dimensional_mega",
+      "nombre": "Bloque Dimensional MEGA"
+    },
+    {
+      "id": "mcplus:bloque_dimensional_titan",
+      "nombre": "Bloque Dimensional TITÁN"
+    },
+    {
+      "id": "mcplus:bloque_dimensional_ultra",
+      "nombre": "Bloque Dimensional ULTRA (Universo)"
+    },
+    {
+      "id": "mcplus:bloque_neon",
+      "nombre": "Bloque de Neón",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/bloque_neon.png"
+    },
+    {
+      "id": "mcplus:bloque_titanio",
+      "nombre": "Bloque de Titanio"
+    },
+    {
+      "id": "mcplus:bloque_vacio",
+      "nombre": "Bloque de Cristal del Vacío"
+    },
+    {
+      "id": "mcplus:ceniza_mercurio",
+      "nombre": "Ceniza de Mercurio"
+    },
+    {
+      "id": "mcplus:cesped_dulce",
+      "nombre": "Césped de Azúcar"
+    },
+    {
+      "id": "mcplus:consola",
+      "nombre": "Consola de Videojuegos"
+    },
+    {
+      "id": "mcplus:cristal_arcano",
+      "nombre": "Cristal Arcano"
+    },
+    {
+      "id": "mcplus:cristal_arena",
+      "nombre": "Cristal del Coliseo"
+    },
+    {
+      "id": "mcplus:hielo_eterno",
+      "nombre": "Hielo Eterno"
+    },
+    {
+      "id": "mcplus:hielo_neptuno",
+      "nombre": "Hielo de Neptuno"
+    },
+    {
+      "id": "mcplus:hielo_saturno",
+      "nombre": "Hielo de Saturno"
+    },
+    {
+      "id": "mcplus:hielo_urano",
+      "nombre": "Hielo de Urano"
+    },
+    {
+      "id": "mcplus:ladrillo_real",
+      "nombre": "Ladrillo Real"
+    },
+    {
+      "id": "mcplus:ladrillo_real_agrietado",
+      "nombre": "Ladrillo Real Agrietado"
+    },
+    {
+      "id": "mcplus:lampara_vacio",
+      "nombre": "Lámpara del Vacío"
+    },
+    {
+      "id": "mcplus:lapida",
+      "nombre": "Lápida"
+    },
+    {
+      "id": "mcplus:laptop",
+      "nombre": "Laptop"
+    },
+    {
+      "id": "mcplus:luz_arena",
+      "nombre": "Antorcha del Coliseo"
+    },
+    {
+      "id": "mcplus:mena_titanio",
+      "nombre": "Mena de Titanio"
+    },
+    {
+      "id": "mcplus:mena_vacio",
+      "nombre": "Mena de Cristal del Vacío"
+    },
+    {
+      "id": "mcplus:muro_arena",
+      "nombre": "Muro del Coliseo"
+    },
+    {
+      "id": "mcplus:nube_joviana",
+      "nombre": "Nube Joviana"
+    },
+    {
+      "id": "mcplus:panel_arena",
+      "nombre": "Panel de la Arena"
+    },
+    {
+      "id": "mcplus:pared_bolsillo",
+      "nombre": "Pared de Bolsillo"
+    },
+    {
+      "id": "mcplus:puerta_automatica",
+      "nombre": "Puerta Automática"
+    },
+    {
+      "id": "mcplus:puerta_boveda",
+      "nombre": "Puerta de Bóveda"
+    },
+    {
+      "id": "mcplus:puerta_codigo",
+      "nombre": "Puerta con Código"
+    },
+    {
+      "id": "mcplus:puerta_cristal",
+      "nombre": "Puerta de Cristal"
+    },
+    {
+      "id": "mcplus:puerta_llave",
+      "nombre": "Puerta con Llave"
+    },
+    {
+      "id": "mcplus:regolito",
+      "nombre": "Regolito Lunar"
+    },
+    {
+      "id": "mcplus:roca_kepler",
+      "nombre": "Roca de Kepler"
+    },
+    {
+      "id": "mcplus:roca_lunar",
+      "nombre": "Roca Lunar"
+    },
+    {
+      "id": "mcplus:roca_marciana",
+      "nombre": "Roca Marciana"
+    },
+    {
+      "id": "mcplus:roca_mercurio",
+      "nombre": "Roca de Mercurio"
+    },
+    {
+      "id": "mcplus:roca_venus",
+      "nombre": "Roca Venusiana"
+    },
+    {
+      "id": "mcplus:salida_bolsillo",
+      "nombre": "Bloque de Salida"
+    },
+    {
+      "id": "mcplus:suelo_arena",
+      "nombre": "Arena del Coliseo"
+    },
+    {
+      "id": "mcplus:suelo_bolsillo",
+      "nombre": "Suelo de Bolsillo"
+    },
+    {
+      "id": "mcplus:tablones_pirata",
+      "nombre": "Tablones Pirata"
+    },
+    {
+      "id": "mcplus:tesoro_pirata",
+      "nombre": "Tesoro Pirata"
+    },
+    {
+      "id": "mcplus:totem_god",
+      "nombre": "Tótem de God",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/totem_god.png"
+    },
+    {
+      "id": "mcplus:tv",
+      "nombre": "Televisión"
+    }
+  ],
+  "items": [
+    {
+      "id": "mcplus:acechador_alien_spawn_egg",
+      "nombre": "Huevo de Acechador Alienígena"
+    },
+    {
+      "id": "mcplus:acechador_vacio_spawn_egg",
+      "nombre": "Huevo de Acechador del Vacío"
+    },
+    {
+      "id": "mcplus:alas_vacio",
+      "nombre": "Alas del Vacío"
+    },
+    {
+      "id": "mcplus:arana_abisal_spawn_egg",
+      "nombre": "Huevo de Araña Abisal"
+    },
+    {
+      "id": "mcplus:arana_acida_spawn_egg",
+      "nombre": "Huevo de Araña Ácida"
+    },
+    {
+      "id": "mcplus:arana_gigante_spawn_egg",
+      "nombre": "Huevo de Araña Gigante"
+    },
+    {
+      "id": "mcplus:archimago_spawn_egg",
+      "nombre": "Huevo de El Archimago"
+    },
+    {
+      "id": "mcplus:arena_batallas",
+      "nombre": "Arena de Batallas"
+    },
+    {
+      "id": "mcplus:arnes",
+      "nombre": "Arnés Universal"
+    },
+    {
+      "id": "mcplus:astro_zombi_spawn_egg",
+      "nombre": "Huevo de Astro-Zombi"
+    },
+    {
+      "id": "mcplus:avestruz_spawn_egg",
+      "nombre": "Huevo de Avestruz"
+    },
+    {
+      "id": "mcplus:avion",
+      "nombre": "Avión"
+    },
+    {
+      "id": "mcplus:baston_arcano",
+      "nombre": "Bastón Arcano"
+    },
+    {
+      "id": "mcplus:baston_fenix",
+      "nombre": "Bastón del Fénix",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/baston_fenix.png"
+    },
+    {
+      "id": "mcplus:bateria_plasma",
+      "nombre": "Batería de Plasma"
+    },
+    {
+      "id": "mcplus:bestia_gemela_spawn_egg",
+      "nombre": "Huevo de Bestia de las Dos Lunas"
+    },
+    {
+      "id": "mcplus:bloque_comando_corrupto",
+      "nombre": "Bloque de Comando Corrupto (invoca a la Wither Storm)"
+    },
+    {
+      "id": "mcplus:bola_plasma",
+      "nombre": "Bola de Plasma"
+    },
+    {
+      "id": "mcplus:bolsa_end",
+      "nombre": "Bolsa del End"
+    },
+    {
+      "id": "mcplus:brocheta",
+      "nombre": "Brocheta de Carne"
+    },
+    {
+      "id": "mcplus:bruja_oscura_spawn_egg",
+      "nombre": "Huevo de Bruja Oscura"
+    },
+    {
+      "id": "mcplus:brujula_explorador",
+      "nombre": "Brújula del Explorador"
+    },
+    {
+      "id": "mcplus:bufalo_spawn_egg",
+      "nombre": "Huevo de Búfalo"
+    },
+    {
+      "id": "mcplus:bug_digital_spawn_egg",
+      "nombre": "Huevo de Bug Digital"
+    },
+    {
+      "id": "mcplus:caballero_oscuro_spawn_egg",
+      "nombre": "Huevo de El Caballero Oscuro"
+    },
+    {
+      "id": "mcplus:cafe",
+      "nombre": "Café"
+    },
+    {
+      "id": "mcplus:camara",
+      "nombre": "Cámara de Seguridad"
+    },
+    {
+      "id": "mcplus:capibara_spawn_egg",
+      "nombre": "Huevo de Capibara"
+    },
+    {
+      "id": "mcplus:capitan_pirata_spawn_egg",
+      "nombre": "Huevo de Capitán Barbanegra"
+    },
+    {
+      "id": "mcplus:caramelo_esqueleto_spawn_egg",
+      "nombre": "Huevo de Esqueleto de Caramelo"
+    },
+    {
+      "id": "mcplus:carne_avestruz_cocinada",
+      "nombre": "Carne de Avestruz Cocinada"
+    },
+    {
+      "id": "mcplus:carne_avestruz_cruda",
+      "nombre": "Carne de Avestruz Cruda"
+    },
+    {
+      "id": "mcplus:carne_bufalo_cocinada",
+      "nombre": "Carne de Búfalo Cocinada"
+    },
+    {
+      "id": "mcplus:carne_bufalo_cruda",
+      "nombre": "Carne de Búfalo Cruda"
+    },
+    {
+      "id": "mcplus:carne_capibara_cocinada",
+      "nombre": "Carne de Capibara Cocinada"
+    },
+    {
+      "id": "mcplus:carne_capibara_cruda",
+      "nombre": "Carne de Capibara Cruda"
+    },
+    {
+      "id": "mcplus:carne_jabali_cocinada",
+      "nombre": "Carne de Jabalí Cocinada"
+    },
+    {
+      "id": "mcplus:carne_jabali_cruda",
+      "nombre": "Carne de Jabalí Cruda"
+    },
+    {
+      "id": "mcplus:carne_pato_cocinada",
+      "nombre": "Carne de Pato Cocinada"
+    },
+    {
+      "id": "mcplus:carne_pato_cruda",
+      "nombre": "Carne de Pato Cruda"
+    },
+    {
+      "id": "mcplus:carne_pavo_cocinada",
+      "nombre": "Carne de Pavo Cocinada"
+    },
+    {
+      "id": "mcplus:carne_pavo_cruda",
+      "nombre": "Carne de Pavo Cruda"
+    },
+    {
+      "id": "mcplus:carne_venado_cocinada",
+      "nombre": "Carne de Venado Cocinada"
+    },
+    {
+      "id": "mcplus:carne_venado_cruda",
+      "nombre": "Carne de Venado Cruda"
+    },
+    {
+      "id": "mcplus:carne_yak_cocinada",
+      "nombre": "Carne de Yak Cocinada"
+    },
+    {
+      "id": "mcplus:carne_yak_cruda",
+      "nombre": "Carne de Yak Cruda"
+    },
+    {
+      "id": "mcplus:catapulta",
+      "nombre": "Catapulta"
+    },
+    {
+      "id": "mcplus:celular",
+      "nombre": "Celular",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/celular.png"
+    },
+    {
+      "id": "mcplus:centinela_celeste_spawn_egg",
+      "nombre": "Huevo de Centinela Celeste"
+    },
+    {
+      "id": "mcplus:centinela_hielo_spawn_egg",
+      "nombre": "Huevo de Centinela de Hielo"
+    },
+    {
+      "id": "mcplus:cereza",
+      "nombre": "Cerezas"
+    },
+    {
+      "id": "mcplus:cereza_dorada",
+      "nombre": "Cerezas Doradas"
+    },
+    {
+      "id": "mcplus:cereza_encantada",
+      "nombre": "Cerezas Encantadas"
+    },
+    {
+      "id": "mcplus:cetro_codigo",
+      "nombre": "Cetro del Código"
+    },
+    {
+      "id": "mcplus:cetro_tormenta",
+      "nombre": "Cetro de la Tormenta"
+    },
+    {
+      "id": "mcplus:chip_404",
+      "nombre": "Chip 404"
+    },
+    {
+      "id": "mcplus:chocolate",
+      "nombre": "Chocolate"
+    },
+    {
+      "id": "mcplus:ciervo_spawn_egg",
+      "nombre": "Huevo de Ciervo"
+    },
+    {
+      "id": "mcplus:claude_fable_spawn_egg",
+      "nombre": "Huevo de Claude Fable"
+    },
+    {
+      "id": "mcplus:coche",
+      "nombre": "Coche"
+    },
+    {
+      "id": "mcplus:coco",
+      "nombre": "Coco"
+    },
+    {
+      "id": "mcplus:coco_dorada",
+      "nombre": "Coco Dorado"
+    },
+    {
+      "id": "mcplus:coco_encantada",
+      "nombre": "Coco Encantado"
+    },
+    {
+      "id": "mcplus:cohete",
+      "nombre": "Cohete"
+    },
+    {
+      "id": "mcplus:colmillo_abisal",
+      "nombre": "Colmillo Abisal"
+    },
+    {
+      "id": "mcplus:colmillo_yeti",
+      "nombre": "Colmillo de Yeti"
+    },
+    {
+      "id": "mcplus:coloso_lunar_spawn_egg",
+      "nombre": "Huevo de Coloso Lunar"
+    },
+    {
+      "id": "mcplus:combustible",
+      "nombre": "Combustible de Cohete"
+    },
+    {
+      "id": "mcplus:comida_gatuna",
+      "nombre": "Comida Gatuna Premium"
+    },
+    {
+      "id": "mcplus:control_universo",
+      "nombre": "Control del Universo",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/control_universo.png"
+    },
+    {
+      "id": "mcplus:corazon_jengibre",
+      "nombre": "Corazón de Jengibre"
+    },
+    {
+      "id": "mcplus:corazon_tormenta",
+      "nombre": "Corazón de la Tormenta"
+    },
+    {
+      "id": "mcplus:corazon_vacio",
+      "nombre": "Corazón del Vacío"
+    },
+    {
+      "id": "mcplus:corona_ender",
+      "nombre": "Corona de Lord Ender"
+    },
+    {
+      "id": "mcplus:corona_gatuna",
+      "nombre": "Corona Gatuna (invoca al Rey Gato)",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/corona_gatuna.png"
+    },
+    {
+      "id": "mcplus:corona_real",
+      "nombre": "Corona Real"
+    },
+    {
+      "id": "mcplus:creeper_electrico_spawn_egg",
+      "nombre": "Huevo de Creeper Eléctrico"
+    },
+    {
+      "id": "mcplus:cristal_vacio",
+      "nombre": "Cristal del Vacío"
+    },
+    {
+      "id": "mcplus:cubo_solar_spawn_egg",
+      "nombre": "Huevo de Cubo Solar"
+    },
+    {
+      "id": "mcplus:cuerno_ender",
+      "nombre": "Cuerno de Lord Ender"
+    },
+    {
+      "id": "mcplus:devorador_abisal_spawn_egg",
+      "nombre": "Huevo de Devorador Abisal"
+    },
+    {
+      "id": "mcplus:dimension_bolsillo",
+      "nombre": "Dimensión de Bolsillo",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/dimension_bolsillo.png"
+    },
+    {
+      "id": "mcplus:dimension_bolsillo_ampliada",
+      "nombre": "Dimensión de Bolsillo Ampliada"
+    },
+    {
+      "id": "mcplus:dimension_bolsillo_giga",
+      "nombre": "Dimensión de Bolsillo GIGA"
+    },
+    {
+      "id": "mcplus:dimension_bolsillo_mega",
+      "nombre": "Dimensión de Bolsillo MEGA"
+    },
+    {
+      "id": "mcplus:dimension_bolsillo_titan",
+      "nombre": "Dimensión de Bolsillo TITÁN"
+    },
+    {
+      "id": "mcplus:disquete_corrupto",
+      "nombre": "Disquete Corrupto (invoca a ERROR 404)"
+    },
+    {
+      "id": "mcplus:donut",
+      "nombre": "Dona"
+    },
+    {
+      "id": "mcplus:dron_ataque_spawn_egg",
+      "nombre": "Huevo de Dron de Ataque"
+    },
+    {
+      "id": "mcplus:dron_recolector_spawn_egg",
+      "nombre": "Huevo de Dron Recolector"
+    },
+    {
+      "id": "mcplus:duende_spawn_egg",
+      "nombre": "Huevo de Duende Ladrón"
+    },
+    {
+      "id": "mcplus:ensalada_frutas",
+      "nombre": "Ensalada de Frutas"
+    },
+    {
+      "id": "mcplus:error_404_spawn_egg",
+      "nombre": "Huevo de ERROR 404"
+    },
+    {
+      "id": "mcplus:escopeta",
+      "nombre": "Escopeta"
+    },
+    {
+      "id": "mcplus:esencia_arcana",
+      "nombre": "Esencia Arcana"
+    },
+    {
+      "id": "mcplus:esencia_divina",
+      "nombre": "Esencia Divina"
+    },
+    {
+      "id": "mcplus:esencia_vacio",
+      "nombre": "Esencia del Vacío"
+    },
+    {
+      "id": "mcplus:espada_pepinillo",
+      "nombre": "Espada Pepinillo"
+    },
+    {
+      "id": "mcplus:espada_real",
+      "nombre": "Espada Real"
+    },
+    {
+      "id": "mcplus:espantapajaros_spawn_egg",
+      "nombre": "Huevo de Espantapájaros"
+    },
+    {
+      "id": "mcplus:espectro_anillos_spawn_egg",
+      "nombre": "Huevo de Espectro de los Anillos"
+    },
+    {
+      "id": "mcplus:espiritu_neptuno_spawn_egg",
+      "nombre": "Huevo de Espíritu de Neptuno"
+    },
+    {
+      "id": "mcplus:espiritu_solar_spawn_egg",
+      "nombre": "Huevo de Espíritu Solar"
+    },
+    {
+      "id": "mcplus:esqueleto_caballero_spawn_egg",
+      "nombre": "Huevo de Esqueleto Caballero"
+    },
+    {
+      "id": "mcplus:esqueleto_pirata_spawn_egg",
+      "nombre": "Huevo de Esqueleto Pirata"
+    },
+    {
+      "id": "mcplus:estofado_salvaje",
+      "nombre": "Estofado Salvaje"
+    },
+    {
+      "id": "mcplus:fantasma_spawn_egg",
+      "nombre": "Huevo de Fantasma"
+    },
+    {
+      "id": "mcplus:faraon_spawn_egg",
+      "nombre": "Huevo de El Faraón"
+    },
+    {
+      "id": "mcplus:fenix_spawn_egg",
+      "nombre": "Huevo de Fénix Celestial"
+    },
+    {
+      "id": "mcplus:ficha_desafio",
+      "nombre": "Ficha de Desafío"
+    },
+    {
+      "id": "mcplus:flamenco_spawn_egg",
+      "nombre": "Huevo de Flamenco"
+    },
+    {
+      "id": "mcplus:francotirador",
+      "nombre": "Rifle Francotirador"
+    },
+    {
+      "id": "mcplus:frasco_pepinillos",
+      "nombre": "Frasco de Pepinillos"
+    },
+    {
+      "id": "mcplus:fresa",
+      "nombre": "Fresa"
+    },
+    {
+      "id": "mcplus:fresa_dorada",
+      "nombre": "Fresa Dorada"
+    },
+    {
+      "id": "mcplus:fresa_encantada",
+      "nombre": "Fresa Encantada"
+    },
+    {
+      "id": "mcplus:fruta_estelar",
+      "nombre": "Fruta Estelar"
+    },
+    {
+      "id": "mcplus:fruta_estelar_dorada",
+      "nombre": "Fruta Estelar Dorada"
+    },
+    {
+      "id": "mcplus:fruta_estelar_encantada",
+      "nombre": "Fruta Estelar Encantada",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/fruta_estelar_encantada.png"
+    },
+    {
+      "id": "mcplus:galleta_gigante",
+      "nombre": "Galleta Gigante (invoca al Gólem de Jengibre)"
+    },
+    {
+      "id": "mcplus:galleta_zombi_spawn_egg",
+      "nombre": "Huevo de Zombi Galleta"
+    },
+    {
+      "id": "mcplus:garra_gatuna",
+      "nombre": "Garra Gatuna"
+    },
+    {
+      "id": "mcplus:garra_rey_gato",
+      "nombre": "Garra del Rey Gato"
+    },
+    {
+      "id": "mcplus:garrote_yeti",
+      "nombre": "Garrote del Yeti"
+    },
+    {
+      "id": "mcplus:gas_pimienta",
+      "nombre": "Gas Pimienta"
+    },
+    {
+      "id": "mcplus:gato_dorado_spawn_egg",
+      "nombre": "Huevo de Gato Dorado"
+    },
+    {
+      "id": "mcplus:gato_espacial_spawn_egg",
+      "nombre": "Huevo de Gato Espacial"
+    },
+    {
+      "id": "mcplus:gato_fantasma_spawn_egg",
+      "nombre": "Huevo de Gato Fantasma"
+    },
+    {
+      "id": "mcplus:gato_gigante_spawn_egg",
+      "nombre": "Huevo de Gato Gigante"
+    },
+    {
+      "id": "mcplus:gato_ninja_spawn_egg",
+      "nombre": "Huevo de Gato Ninja"
+    },
+    {
+      "id": "mcplus:gato_pepinillo_spawn_egg",
+      "nombre": "Huevo de Gato Pepinillo"
+    },
+    {
+      "id": "mcplus:gato_robot_spawn_egg",
+      "nombre": "Huevo de Gato Robot"
+    },
+    {
+      "id": "mcplus:gato_zombi_spawn_egg",
+      "nombre": "Huevo de Gato Zombi"
+    },
+    {
+      "id": "mcplus:glitch_spawn_egg",
+      "nombre": "Huevo de Glitch"
+    },
+    {
+      "id": "mcplus:god_spawn_egg",
+      "nombre": "Huevo de GOD"
+    },
+    {
+      "id": "mcplus:golem_jengibre_spawn_egg",
+      "nombre": "Huevo de Gólem de Jengibre"
+    },
+    {
+      "id": "mcplus:gominola_spawn_egg",
+      "nombre": "Huevo de Gominola"
+    },
+    {
+      "id": "mcplus:gorro_yeti",
+      "nombre": "Gorro de Yeti"
+    },
+    {
+      "id": "mcplus:guadana_almas",
+      "nombre": "Guadaña de Almas"
+    },
+    {
+      "id": "mcplus:guadana_fuego",
+      "nombre": "Guadaña de Fuego"
+    },
+    {
+      "id": "mcplus:guadana_hielo",
+      "nombre": "Guadaña de Hielo"
+    },
+    {
+      "id": "mcplus:guadana_rayo",
+      "nombre": "Guadaña del Rayo"
+    },
+    {
+      "id": "mcplus:guadana_sangre",
+      "nombre": "Guadaña de Sangre"
+    },
+    {
+      "id": "mcplus:guadana_suprema",
+      "nombre": "Guadaña Suprema",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/guadana_suprema.png"
+    },
+    {
+      "id": "mcplus:guadana_vacio",
+      "nombre": "Guadaña del Vacío"
+    },
+    {
+      "id": "mcplus:guardian_vacio_spawn_egg",
+      "nombre": "Huevo de Guardián del Vacío"
+    },
+    {
+      "id": "mcplus:gusano_abisal_spawn_egg",
+      "nombre": "Huevo de Gusano Abisal"
+    },
+    {
+      "id": "mcplus:gusano_arena_spawn_egg",
+      "nombre": "Huevo de Gusano de Arena"
+    },
+    {
+      "id": "mcplus:hamburguesa",
+      "nombre": "Hamburguesa"
+    },
+    {
+      "id": "mcplus:harpia_spawn_egg",
+      "nombre": "Huevo de Harpía"
+    },
+    {
+      "id": "mcplus:helado",
+      "nombre": "Helado"
+    },
+    {
+      "id": "mcplus:helicoptero",
+      "nombre": "Helicóptero"
+    },
+    {
+      "id": "mcplus:hot_dog",
+      "nombre": "Hot Dog"
+    },
+    {
+      "id": "mcplus:huevo_fenix",
+      "nombre": "Huevo de Fénix (invoca al Fénix Celestial)",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/huevo_fenix.png"
+    },
+    {
+      "id": "mcplus:invocador_archimago",
+      "nombre": "Grimorio Prohibido"
+    },
+    {
+      "id": "mcplus:invocador_bestia",
+      "nombre": "Aullido Gemelo"
+    },
+    {
+      "id": "mcplus:invocador_caballero",
+      "nombre": "Yelmo Maldito"
+    },
+    {
+      "id": "mcplus:invocador_capitan",
+      "nombre": "Ron Maldito de Barbanegra"
+    },
+    {
+      "id": "mcplus:invocador_coloso",
+      "nombre": "Sismógrafo Lunar"
+    },
+    {
+      "id": "mcplus:invocador_mecha",
+      "nombre": "Señal de Activación MECHA-01"
+    },
+    {
+      "id": "mcplus:invocador_reina",
+      "nombre": "Cristal Ácido"
+    },
+    {
+      "id": "mcplus:invocador_tormenta",
+      "nombre": "Ojo de Júpiter"
+    },
+    {
+      "id": "mcplus:invocador_yeti",
+      "nombre": "Cuerno Helado"
+    },
+    {
+      "id": "mcplus:jabali_spawn_egg",
+      "nombre": "Huevo de Jabalí"
+    },
+    {
+      "id": "mcplus:jet",
+      "nombre": "Jet"
+    },
+    {
+      "id": "mcplus:kepleriano_spawn_egg",
+      "nombre": "Huevo de Kepleriano"
+    },
+    {
+      "id": "mcplus:kit_robot",
+      "nombre": "Kit de Robot Aliado"
+    },
+    {
+      "id": "mcplus:kiwi",
+      "nombre": "Kiwi"
+    },
+    {
+      "id": "mcplus:kiwi_dorada",
+      "nombre": "Kiwi Dorado"
+    },
+    {
+      "id": "mcplus:kiwi_encantada",
+      "nombre": "Kiwi Encantado"
+    },
+    {
+      "id": "mcplus:lanzacohetes",
+      "nombre": "Lanzacohetes"
+    },
+    {
+      "id": "mcplus:lentes_3d",
+      "nombre": "Lentes 3D"
+    },
+    {
+      "id": "mcplus:lentes_buceo",
+      "nombre": "Lentes de Buceo"
+    },
+    {
+      "id": "mcplus:lentes_fable",
+      "nombre": "Lentes de Claude Fable"
+    },
+    {
+      "id": "mcplus:lentes_inteligentes",
+      "nombre": "Lentes Inteligentes"
+    },
+    {
+      "id": "mcplus:lentes_nocturnos",
+      "nombre": "Lentes de Visión Nocturna"
+    },
+    {
+      "id": "mcplus:lentes_rayos_x",
+      "nombre": "Lentes de Rayos X",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/lentes_rayos_x.png"
+    },
+    {
+      "id": "mcplus:lentes_sol",
+      "nombre": "Lentes de Sol"
+    },
+    {
+      "id": "mcplus:lingote_titanio",
+      "nombre": "Lingote de Titanio"
+    },
+    {
+      "id": "mcplus:llave",
+      "nombre": "Llave"
+    },
+    {
+      "id": "mcplus:llave_abismo",
+      "nombre": "Llave del Abismo"
+    },
+    {
+      "id": "mcplus:llave_boveda",
+      "nombre": "Llave de Bóveda"
+    },
+    {
+      "id": "mcplus:llave_cielo",
+      "nombre": "Llave de las Islas del Cielo"
+    },
+    {
+      "id": "mcplus:llave_digital",
+      "nombre": "Llave del Mundo Digital"
+    },
+    {
+      "id": "mcplus:llave_dulce",
+      "nombre": "Llave de la Tierra de Dulces"
+    },
+    {
+      "id": "mcplus:llave_gatuna",
+      "nombre": "Llave del Reino Gatuno"
+    },
+    {
+      "id": "mcplus:llave_nucleo",
+      "nombre": "Llave del Núcleo"
+    },
+    {
+      "id": "mcplus:lord_ender_spawn_egg",
+      "nombre": "Huevo de Lord Ender"
+    },
+    {
+      "id": "mcplus:mando",
+      "nombre": "Mando"
+    },
+    {
+      "id": "mcplus:mango",
+      "nombre": "Mango"
+    },
+    {
+      "id": "mcplus:mango_dorada",
+      "nombre": "Mango Dorado"
+    },
+    {
+      "id": "mcplus:mango_encantada",
+      "nombre": "Mango Encantado"
+    },
+    {
+      "id": "mcplus:mapa_tesoro",
+      "nombre": "Mapa del Tesoro"
+    },
+    {
+      "id": "mcplus:marciano_spawn_egg",
+      "nombre": "Huevo de Marciano"
+    },
+    {
+      "id": "mcplus:mecha_marciano_spawn_egg",
+      "nombre": "Huevo de Mecha Marciano"
+    },
+    {
+      "id": "mcplus:medusa_gaseosa_spawn_egg",
+      "nombre": "Huevo de Medusa Gaseosa"
+    },
+    {
+      "id": "mcplus:minigun",
+      "nombre": "Minigun"
+    },
+    {
+      "id": "mcplus:misil",
+      "nombre": "Misil"
+    },
+    {
+      "id": "mcplus:mochila_cohete",
+      "nombre": "Mochila Cohete"
+    },
+    {
+      "id": "mcplus:momia_spawn_egg",
+      "nombre": "Huevo de Momia"
+    },
+    {
+      "id": "mcplus:moneda_pirata",
+      "nombre": "Doblón Pirata"
+    },
+    {
+      "id": "mcplus:municion",
+      "nombre": "Munición"
+    },
+    {
+      "id": "mcplus:naranja",
+      "nombre": "Naranja"
+    },
+    {
+      "id": "mcplus:naranja_dorada",
+      "nombre": "Naranja Dorada"
+    },
+    {
+      "id": "mcplus:naranja_encantada",
+      "nombre": "Naranja Encantada"
+    },
+    {
+      "id": "mcplus:nucleo_joviano",
+      "nombre": "Núcleo Joviano"
+    },
+    {
+      "id": "mcplus:nucleo_kepler",
+      "nombre": "Núcleo de Kepler"
+    },
+    {
+      "id": "mcplus:nucleo_lunar",
+      "nombre": "Núcleo Lunar"
+    },
+    {
+      "id": "mcplus:nucleo_marciano",
+      "nombre": "Núcleo Marciano"
+    },
+    {
+      "id": "mcplus:nucleo_venusiano",
+      "nombre": "Núcleo Venusiano"
+    },
+    {
+      "id": "mcplus:ojo_abismo",
+      "nombre": "Ojo del Abismo (invoca al Devorador Abisal)"
+    },
+    {
+      "id": "mcplus:ojo_ra",
+      "nombre": "Ojo de Ra"
+    },
+    {
+      "id": "mcplus:ojo_tormenta_spawn_egg",
+      "nombre": "Huevo de Ojo de la Tormenta"
+    },
+    {
+      "id": "mcplus:ojo_vacio",
+      "nombre": "Ojo del Vacío"
+    },
+    {
+      "id": "mcplus:ovni",
+      "nombre": "OVNI"
+    },
+    {
+      "id": "mcplus:palomitas",
+      "nombre": "Palomitas"
+    },
+    {
+      "id": "mcplus:papa_caliente",
+      "nombre": "Papa Caliente"
+    },
+    {
+      "id": "mcplus:pastel_lava",
+      "nombre": "Pastel de Lava"
+    },
+    {
+      "id": "mcplus:pato_spawn_egg",
+      "nombre": "Huevo de Pato"
+    },
+    {
+      "id": "mcplus:pavo_relleno",
+      "nombre": "Pavo Relleno"
+    },
+    {
+      "id": "mcplus:pavo_spawn_egg",
+      "nombre": "Huevo de Pavo"
+    },
+    {
+      "id": "mcplus:pepinillo",
+      "nombre": "Pepinillo"
+    },
+    {
+      "id": "mcplus:pepinillo_cosmico",
+      "nombre": "Pepinillo Cósmico",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/pepinillo_cosmico.png"
+    },
+    {
+      "id": "mcplus:pepinillo_dorado",
+      "nombre": "Pepinillo Dorado"
+    },
+    {
+      "id": "mcplus:pepinillo_encantado",
+      "nombre": "Pepinillo Encantado"
+    },
+    {
+      "id": "mcplus:pepinillo_maldito",
+      "nombre": "Pepinillo Maldito"
+    },
+    {
+      "id": "mcplus:pepinillo_picante",
+      "nombre": "Pepinillo Picante"
+    },
+    {
+      "id": "mcplus:perla_estable",
+      "nombre": "Perla Estable"
+    },
+    {
+      "id": "mcplus:pina",
+      "nombre": "Piña"
+    },
+    {
+      "id": "mcplus:pina_dorada",
+      "nombre": "Piña Dorada"
+    },
+    {
+      "id": "mcplus:pina_encantada",
+      "nombre": "Piña Encantada"
+    },
+    {
+      "id": "mcplus:pinguino_spawn_egg",
+      "nombre": "Huevo de Pingüino"
+    },
+    {
+      "id": "mcplus:pistola",
+      "nombre": "Pistola"
+    },
+    {
+      "id": "mcplus:pizza",
+      "nombre": "Pizza",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/pizza.png"
+    },
+    {
+      "id": "mcplus:platano",
+      "nombre": "Plátano"
+    },
+    {
+      "id": "mcplus:platano_dorada",
+      "nombre": "Plátano Dorado"
+    },
+    {
+      "id": "mcplus:platano_encantada",
+      "nombre": "Plátano Encantado"
+    },
+    {
+      "id": "mcplus:pluma_fenix",
+      "nombre": "Pluma del Fénix"
+    },
+    {
+      "id": "mcplus:puerta_automatica",
+      "nombre": "Puerta Automática"
+    },
+    {
+      "id": "mcplus:puerta_boveda",
+      "nombre": "Puerta de Bóveda"
+    },
+    {
+      "id": "mcplus:puerta_codigo",
+      "nombre": "Puerta con Código"
+    },
+    {
+      "id": "mcplus:puerta_cristal",
+      "nombre": "Puerta de Cristal"
+    },
+    {
+      "id": "mcplus:puerta_llave",
+      "nombre": "Puerta con Llave"
+    },
+    {
+      "id": "mcplus:ramen",
+      "nombre": "Ramen"
+    },
+    {
+      "id": "mcplus:raygun",
+      "nombre": "RayGun"
+    },
+    {
+      "id": "mcplus:reina_acida_spawn_egg",
+      "nombre": "Huevo de Reina Ácida"
+    },
+    {
+      "id": "mcplus:rey_gato_spawn_egg",
+      "nombre": "Huevo de Rey Gato"
+    },
+    {
+      "id": "mcplus:rifle_asalto",
+      "nombre": "Rifle de Asalto"
+    },
+    {
+      "id": "mcplus:robot_aliado_spawn_egg",
+      "nombre": "Huevo de Robot Aliado"
+    },
+    {
+      "id": "mcplus:robot_guerrero_spawn_egg",
+      "nombre": "Huevo de Robot Guerrero"
+    },
+    {
+      "id": "mcplus:robot_marciano_spawn_egg",
+      "nombre": "Huevo de Robot Marciano"
+    },
+    {
+      "id": "mcplus:ron",
+      "nombre": "Ron Pirata"
+    },
+    {
+      "id": "mcplus:sable_pirata",
+      "nombre": "Sable Pirata",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/sable_pirata.png"
+    },
+    {
+      "id": "mcplus:saco",
+      "nombre": "Saco"
+    },
+    {
+      "id": "mcplus:saco_extendido",
+      "nombre": "Saco Extendido"
+    },
+    {
+      "id": "mcplus:saco_ultra",
+      "nombre": "Saco Ultra (con imán)",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/saco_ultra.png"
+    },
+    {
+      "id": "mcplus:sandwich",
+      "nombre": "Sándwich"
+    },
+    {
+      "id": "mcplus:selenita_spawn_egg",
+      "nombre": "Huevo de Selenita"
+    },
+    {
+      "id": "mcplus:slime_acido_spawn_egg",
+      "nombre": "Huevo de Slime Ácido"
+    },
+    {
+      "id": "mcplus:sombra_spawn_egg",
+      "nombre": "Huevo de Sombra"
+    },
+    {
+      "id": "mcplus:sombrero_mago",
+      "nombre": "Sombrero de Mago"
+    },
+    {
+      "id": "mcplus:sombrero_pirata",
+      "nombre": "Sombrero Pirata"
+    },
+    {
+      "id": "mcplus:sopa_yeti",
+      "nombre": "Sopa del Yeti"
+    },
+    {
+      "id": "mcplus:sushi",
+      "nombre": "Sushi"
+    },
+    {
+      "id": "mcplus:tacos",
+      "nombre": "Tacos"
+    },
+    {
+      "id": "mcplus:tanque_oxigeno",
+      "nombre": "Tanque de Oxígeno"
+    },
+    {
+      "id": "mcplus:taser",
+      "nombre": "Taser"
+    },
+    {
+      "id": "mcplus:tentaculo_spawn_egg",
+      "nombre": "Huevo de Tentáculo"
+    },
+    {
+      "id": "mcplus:titanio_crudo",
+      "nombre": "Titanio en Bruto"
+    },
+    {
+      "id": "mcplus:traje_botas",
+      "nombre": "Botas Espaciales"
+    },
+    {
+      "id": "mcplus:traje_casco",
+      "nombre": "Casco Espacial",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/traje_casco.png"
+    },
+    {
+      "id": "mcplus:traje_grebas",
+      "nombre": "Pantalones Espaciales"
+    },
+    {
+      "id": "mcplus:traje_pechera",
+      "nombre": "Traje Espacial"
+    },
+    {
+      "id": "mcplus:trofeo_fable",
+      "nombre": "Trofeo de Claude Fable"
+    },
+    {
+      "id": "mcplus:universo_bolsillo_ultra",
+      "nombre": "ULTRA Universo de Bolsillo"
+    },
+    {
+      "id": "mcplus:uva",
+      "nombre": "Uvas"
+    },
+    {
+      "id": "mcplus:uva_dorada",
+      "nombre": "Uvas Doradas"
+    },
+    {
+      "id": "mcplus:uva_encantada",
+      "nombre": "Uvas Encantadas"
+    },
+    {
+      "id": "mcplus:vacio_botas",
+      "nombre": "Botas del Vacío"
+    },
+    {
+      "id": "mcplus:vacio_casco",
+      "nombre": "Casco del Vacío"
+    },
+    {
+      "id": "mcplus:vacio_espada",
+      "nombre": "Espada del Vacío",
+      "textura": "https://kikerayo.github.io/KatMods/img/mcplus/vacio_espada.png"
+    },
+    {
+      "id": "mcplus:vacio_grebas",
+      "nombre": "Grebas del Vacío"
+    },
+    {
+      "id": "mcplus:vacio_hacha",
+      "nombre": "Hacha del Vacío"
+    },
+    {
+      "id": "mcplus:vacio_pala",
+      "nombre": "Pala del Vacío"
+    },
+    {
+      "id": "mcplus:vacio_pechera",
+      "nombre": "Pechera del Vacío"
+    },
+    {
+      "id": "mcplus:vacio_pico",
+      "nombre": "Pico del Vacío"
+    },
+    {
+      "id": "mcplus:vampiro_spawn_egg",
+      "nombre": "Huevo de Vampiro"
+    },
+    {
+      "id": "mcplus:virus_spawn_egg",
+      "nombre": "Huevo de Virus"
+    },
+    {
+      "id": "mcplus:waffle",
+      "nombre": "Waffle"
+    },
+    {
+      "id": "mcplus:wither_storm_spawn_egg",
+      "nombre": "Huevo de Wither Storm"
+    },
+    {
+      "id": "mcplus:yak_spawn_egg",
+      "nombre": "Huevo de Yak"
+    },
+    {
+      "id": "mcplus:yeti_spawn_egg",
+      "nombre": "Huevo de El Yeti"
+    },
+    {
+      "id": "mcplus:zombi_minero_spawn_egg",
+      "nombre": "Huevo de Zombi Minero"
+    }
+  ],
+  "entidades": [
+    {
+      "id": "mcplus:acechador_alien",
+      "nombre": "Acechador Alienígena"
+    },
+    {
+      "id": "mcplus:acechador_vacio",
+      "nombre": "Acechador del Vacío"
+    },
+    {
+      "id": "mcplus:arana_abisal",
+      "nombre": "Araña Abisal"
+    },
+    {
+      "id": "mcplus:arana_acida",
+      "nombre": "Araña Ácida"
+    },
+    {
+      "id": "mcplus:arana_gigante",
+      "nombre": "Araña Gigante"
+    },
+    {
+      "id": "mcplus:archimago",
+      "nombre": "El Archimago"
+    },
+    {
+      "id": "mcplus:asiento_mando",
+      "nombre": "Asiento"
+    },
+    {
+      "id": "mcplus:astro_zombi",
+      "nombre": "Astro-Zombi"
+    },
+    {
+      "id": "mcplus:avestruz",
+      "nombre": "Avestruz"
+    },
+    {
+      "id": "mcplus:avion",
+      "nombre": "Avión"
+    },
+    {
+      "id": "mcplus:bestia_gemela",
+      "nombre": "Bestia de las Dos Lunas"
+    },
+    {
+      "id": "mcplus:bruja_oscura",
+      "nombre": "Bruja Oscura"
+    },
+    {
+      "id": "mcplus:bufalo",
+      "nombre": "Búfalo"
+    },
+    {
+      "id": "mcplus:bug_digital",
+      "nombre": "Bug Digital"
+    },
+    {
+      "id": "mcplus:caballero_oscuro",
+      "nombre": "El Caballero Oscuro"
+    },
+    {
+      "id": "mcplus:camara",
+      "nombre": "Cámara de Seguridad"
+    },
+    {
+      "id": "mcplus:capibara",
+      "nombre": "Capibara"
+    },
+    {
+      "id": "mcplus:capitan_pirata",
+      "nombre": "Capitán Barbanegra"
+    },
+    {
+      "id": "mcplus:caramelo_esqueleto",
+      "nombre": "Esqueleto de Caramelo"
+    },
+    {
+      "id": "mcplus:catapulta",
+      "nombre": "Catapulta"
+    },
+    {
+      "id": "mcplus:centinela_celeste",
+      "nombre": "Centinela Celeste"
+    },
+    {
+      "id": "mcplus:centinela_hielo",
+      "nombre": "Centinela de Hielo"
+    },
+    {
+      "id": "mcplus:ciervo",
+      "nombre": "Ciervo"
+    },
+    {
+      "id": "mcplus:claude_fable",
+      "nombre": "Claude Fable"
+    },
+    {
+      "id": "mcplus:coche",
+      "nombre": "Coche"
+    },
+    {
+      "id": "mcplus:cohete",
+      "nombre": "Cohete"
+    },
+    {
+      "id": "mcplus:coloso_lunar",
+      "nombre": "Coloso Lunar"
+    },
+    {
+      "id": "mcplus:creeper_electrico",
+      "nombre": "Creeper Eléctrico"
+    },
+    {
+      "id": "mcplus:cubo_solar",
+      "nombre": "Cubo Solar"
+    },
+    {
+      "id": "mcplus:devorador_abisal",
+      "nombre": "Devorador Abisal"
+    },
+    {
+      "id": "mcplus:dron_ataque",
+      "nombre": "Dron de Ataque"
+    },
+    {
+      "id": "mcplus:dron_recolector",
+      "nombre": "Dron Recolector"
+    },
+    {
+      "id": "mcplus:duende",
+      "nombre": "Duende Ladrón"
+    },
+    {
+      "id": "mcplus:error_404",
+      "nombre": "ERROR 404"
+    },
+    {
+      "id": "mcplus:espantapajaros",
+      "nombre": "Espantapájaros"
+    },
+    {
+      "id": "mcplus:espectro_anillos",
+      "nombre": "Espectro de los Anillos"
+    },
+    {
+      "id": "mcplus:espiritu_neptuno",
+      "nombre": "Espíritu de Neptuno"
+    },
+    {
+      "id": "mcplus:espiritu_solar",
+      "nombre": "Espíritu Solar"
+    },
+    {
+      "id": "mcplus:esqueleto_caballero",
+      "nombre": "Esqueleto Caballero"
+    },
+    {
+      "id": "mcplus:esqueleto_pirata",
+      "nombre": "Esqueleto Pirata"
+    },
+    {
+      "id": "mcplus:fantasma",
+      "nombre": "Fantasma"
+    },
+    {
+      "id": "mcplus:faraon",
+      "nombre": "El Faraón"
+    },
+    {
+      "id": "mcplus:fenix",
+      "nombre": "Fénix Celestial"
+    },
+    {
+      "id": "mcplus:flamenco",
+      "nombre": "Flamenco"
+    },
+    {
+      "id": "mcplus:galleta_zombi",
+      "nombre": "Zombi Galleta"
+    },
+    {
+      "id": "mcplus:gato_dorado",
+      "nombre": "Gato Dorado"
+    },
+    {
+      "id": "mcplus:gato_espacial",
+      "nombre": "Gato Espacial"
+    },
+    {
+      "id": "mcplus:gato_fantasma",
+      "nombre": "Gato Fantasma"
+    },
+    {
+      "id": "mcplus:gato_gigante",
+      "nombre": "Gato Gigante"
+    },
+    {
+      "id": "mcplus:gato_ninja",
+      "nombre": "Gato Ninja"
+    },
+    {
+      "id": "mcplus:gato_pepinillo",
+      "nombre": "Gato Pepinillo"
+    },
+    {
+      "id": "mcplus:gato_robot",
+      "nombre": "Gato Robot"
+    },
+    {
+      "id": "mcplus:gato_zombi",
+      "nombre": "Gato Zombi"
+    },
+    {
+      "id": "mcplus:glitch",
+      "nombre": "Glitch"
+    },
+    {
+      "id": "mcplus:god",
+      "nombre": "GOD"
+    },
+    {
+      "id": "mcplus:golem_jengibre",
+      "nombre": "Gólem de Jengibre"
+    },
+    {
+      "id": "mcplus:gominola",
+      "nombre": "Gominola"
+    },
+    {
+      "id": "mcplus:guardian_vacio",
+      "nombre": "Guardián del Vacío"
+    },
+    {
+      "id": "mcplus:gusano_abisal",
+      "nombre": "Gusano Abisal"
+    },
+    {
+      "id": "mcplus:gusano_arena",
+      "nombre": "Gusano de Arena"
+    },
+    {
+      "id": "mcplus:harpia",
+      "nombre": "Harpía"
+    },
+    {
+      "id": "mcplus:helicoptero",
+      "nombre": "Helicóptero"
+    },
+    {
+      "id": "mcplus:jabali",
+      "nombre": "Jabalí"
+    },
+    {
+      "id": "mcplus:jet",
+      "nombre": "Jet"
+    },
+    {
+      "id": "mcplus:kepleriano",
+      "nombre": "Kepleriano"
+    },
+    {
+      "id": "mcplus:lord_ender",
+      "nombre": "Lord Ender"
+    },
+    {
+      "id": "mcplus:marciano",
+      "nombre": "Marciano"
+    },
+    {
+      "id": "mcplus:mecha_marciano",
+      "nombre": "Mecha Marciano"
+    },
+    {
+      "id": "mcplus:medusa_gaseosa",
+      "nombre": "Medusa Gaseosa"
+    },
+    {
+      "id": "mcplus:momia",
+      "nombre": "Momia"
+    },
+    {
+      "id": "mcplus:ojo_tormenta",
+      "nombre": "Ojo de la Tormenta"
+    },
+    {
+      "id": "mcplus:ovni",
+      "nombre": "OVNI"
+    },
+    {
+      "id": "mcplus:pato",
+      "nombre": "Pato"
+    },
+    {
+      "id": "mcplus:pavo",
+      "nombre": "Pavo"
+    },
+    {
+      "id": "mcplus:pinguino",
+      "nombre": "Pingüino"
+    },
+    {
+      "id": "mcplus:rayo_plasma",
+      "nombre": "Bola de Plasma"
+    },
+    {
+      "id": "mcplus:reina_acida",
+      "nombre": "Reina Ácida"
+    },
+    {
+      "id": "mcplus:rey_gato",
+      "nombre": "Rey Gato"
+    },
+    {
+      "id": "mcplus:robot_aliado",
+      "nombre": "Robot Aliado"
+    },
+    {
+      "id": "mcplus:robot_guerrero",
+      "nombre": "Robot Guerrero"
+    },
+    {
+      "id": "mcplus:robot_marciano",
+      "nombre": "Robot Marciano"
+    },
+    {
+      "id": "mcplus:roca_catapulta",
+      "nombre": "Roca de Catapulta"
+    },
+    {
+      "id": "mcplus:selenita",
+      "nombre": "Selenita"
+    },
+    {
+      "id": "mcplus:slime_acido",
+      "nombre": "Slime Ácido"
+    },
+    {
+      "id": "mcplus:sombra",
+      "nombre": "Sombra"
+    },
+    {
+      "id": "mcplus:tentaculo",
+      "nombre": "Tentáculo del Núcleo"
+    },
+    {
+      "id": "mcplus:vampiro",
+      "nombre": "Vampiro"
+    },
+    {
+      "id": "mcplus:virus",
+      "nombre": "Virus"
+    },
+    {
+      "id": "mcplus:wither_storm",
+      "nombre": "Wither Storm"
+    },
+    {
+      "id": "mcplus:yak",
+      "nombre": "Yak"
+    },
+    {
+      "id": "mcplus:yeti",
+      "nombre": "El Yeti"
+    },
+    {
+      "id": "mcplus:zombi_minero",
+      "nombre": "Zombi Minero"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "mod": "titanes",
+  "bloques": [],
+  "items": [
+    {
+      "id": "titanes:baston_laser",
+      "nombre": "Bastón Láser Kat",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/baston_laser.png"
+    },
+    {
+      "id": "titanes:bolsa_pepinos",
+      "nombre": "Bolsa de Pepinos (invoca al Gato Pepino)",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/bolsa_pepinos.png"
+    },
+    {
+      "id": "titanes:cetro_pepinus",
+      "nombre": "Cetro de Pepinus Dios (todas las habilidades)",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cetro_pepinus.png"
+    },
+    {
+      "id": "titanes:corazon_titan",
+      "nombre": "Corazón de Titán",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/corazon_titan.png"
+    },
+    {
+      "id": "titanes:cosmica_espada",
+      "nombre": "Espada Cósmica",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cosmica_espada.png"
+    },
+    {
+      "id": "titanes:cosmica_hacha",
+      "nombre": "Hacha Cósmica",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cosmica_hacha.png"
+    },
+    {
+      "id": "titanes:cosmica_pala",
+      "nombre": "Pala Cósmica",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cosmica_pala.png"
+    },
+    {
+      "id": "titanes:cosmico_botas",
+      "nombre": "Botas Cósmicas",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cosmico_botas.png"
+    },
+    {
+      "id": "titanes:cosmico_casco",
+      "nombre": "Casco Cósmico",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cosmico_casco.png"
+    },
+    {
+      "id": "titanes:cosmico_grebas",
+      "nombre": "Grebas Cósmicas",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cosmico_grebas.png"
+    },
+    {
+      "id": "titanes:cosmico_pechera",
+      "nombre": "Pechera Cósmica",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cosmico_pechera.png"
+    },
+    {
+      "id": "titanes:cosmico_pico",
+      "nombre": "Pico Cósmico",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/cosmico_pico.png"
+    },
+    {
+      "id": "titanes:fragmento_estelar",
+      "nombre": "Fragmento Estelar",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/fragmento_estelar.png"
+    },
+    {
+      "id": "titanes:gato_pepino_spawn_egg",
+      "nombre": "Huevo de Gato Pepino",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/gato_pepino_spawn_egg.png"
+    },
+    {
+      "id": "titanes:gato_pepinus_spawn_egg",
+      "nombre": "Huevo de Gato Pepinus",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/gato_pepinus_spawn_egg.png"
+    },
+    {
+      "id": "titanes:instadeath",
+      "nombre": "Garra InstaDeath",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/instadeath.png"
+    },
+    {
+      "id": "titanes:ovillo_cosmico",
+      "nombre": "Ovillo Cósmico (invoca al Titán Kat)",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/ovillo_cosmico.png"
+    },
+    {
+      "id": "titanes:pepino_magico",
+      "nombre": "Pepino Mágico (debilidad de Pepinus)",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/pepino_magico.png"
+    },
+    {
+      "id": "titanes:pepino_oscuro",
+      "nombre": "Pepino Oscuro (invoca al Gato Pepinus)",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/pepino_oscuro.png"
+    },
+    {
+      "id": "titanes:pepinus_dios_spawn_egg",
+      "nombre": "Huevo de Pepinus Dios",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/pepinus_dios_spawn_egg.png"
+    },
+    {
+      "id": "titanes:rodaja_maldita",
+      "nombre": "Rodaja Maldita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/rodaja_maldita.png"
+    },
+    {
+      "id": "titanes:titan_kat_spawn_egg",
+      "nombre": "Huevo de Titán Kat",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titan_kat_spawn_egg.png"
+    },
+    {
+      "id": "titanes:titan_skeleton_spawn_egg",
+      "nombre": "Huevo de Titán Esqueleto",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titan_skeleton_spawn_egg.png"
+    },
+    {
+      "id": "titanes:titan_spider_spawn_egg",
+      "nombre": "Huevo de Tejedora Abismal",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titan_spider_spawn_egg.png"
+    },
+    {
+      "id": "titanes:titan_wither_skeleton_spawn_egg",
+      "nombre": "Huevo de Rey Ceniza",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titan_wither_skeleton_spawn_egg.png"
+    },
+    {
+      "id": "titanes:titan_zombie_spawn_egg",
+      "nombre": "Huevo de Titán Zombi",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titan_zombie_spawn_egg.png"
+    },
+    {
+      "id": "titanes:titanita_botas",
+      "nombre": "Botas de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_botas.png"
+    },
+    {
+      "id": "titanes:titanita_casco",
+      "nombre": "Casco de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_casco.png"
+    },
+    {
+      "id": "titanes:titanita_espada",
+      "nombre": "Espada de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_espada.png"
+    },
+    {
+      "id": "titanes:titanita_grebas",
+      "nombre": "Grebas de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_grebas.png"
+    },
+    {
+      "id": "titanes:titanita_hacha",
+      "nombre": "Hacha de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_hacha.png"
+    },
+    {
+      "id": "titanes:titanita_ingot",
+      "nombre": "Lingote de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_ingot.png"
+    },
+    {
+      "id": "titanes:titanita_pala",
+      "nombre": "Pala de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_pala.png"
+    },
+    {
+      "id": "titanes:titanita_pechera",
+      "nombre": "Pechera de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_pechera.png"
+    },
+    {
+      "id": "titanes:titanita_pico",
+      "nombre": "Pico de Titanita",
+      "textura": "https://kikerayo.github.io/KatMods/img/titanes/titanita_pico.png"
+    }
+  ],
+  "entidades": [
+    {
+      "id": "titanes:gato_pepino",
+      "nombre": "Gato Pepino"
+    },
+    {
+      "id": "titanes:gato_pepinus",
+      "nombre": "Gato Pepinus"
+    },
+    {
+      "id": "titanes:pepino_magico",
+      "nombre": "Pepino Mágico"
+    },
+    {
+      "id": "titanes:pepinus_dios",
+      "nombre": "Pepinus Dios"
+    },
+    {
+      "id": "titanes:titan_kat",
+      "nombre": "Titán Kat, la Gata Cósmica"
+    },
+    {
+      "id": "titanes:titan_skeleton",
+      "nombre": "Osario, el Titán Esqueleto"
+    },
+    {
+      "id": "titanes:titan_spider",
+      "nombre": "Tejedora Abismal"
+    },
+    {
+      "id": "titanes:titan_wither_skeleton",
+      "nombre": "Rey Ceniza, el Titán Wither"
+    },
+    {
+      "id": "titanes:titan_zombie",
+      "nombre": "Gorgoth, el Titán Zombi"
+    }
+  ]
+}

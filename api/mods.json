@@ -1,0 +1,34 @@
+{
+  "total": 2,
+  "mods": [
+    {
+      "id": "mcplus",
+      "nombre": "Minecraft Plus",
+      "version": "0.6.1",
+      "autor": "Oliver",
+      "categorias": [
+        "aventura",
+        "tecnologia",
+        "jefes"
+      ],
+      "resumen": "El mod universal: añade de todo a Minecraft, desde el End y el espacio hasta tecnología, armas, comida, gatos y desafíos.",
+      "icono": "https://kikerayo.github.io/KatMods/img/mcplus/icon.png",
+      "descarga": "https://kikerayo.github.io/KatMods/descargas/mcplus-0.6.1.jar",
+      "detalle": "https://kikerayo.github.io/KatMods/api/mods/mcplus.json"
+    },
+    {
+      "id": "titanes",
+      "nombre": "Titans Mod",
+      "version": "2.0.0",
+      "autor": "Oliver",
+      "categorias": [
+        "aventura",
+        "jefes"
+      ],
+      "resumen": "Jefes titánicos gigantes, el Titán Kat cósmico como jefe final y nuevas armaduras y herramientas legendarias.",
+      "icono": "https://kikerayo.github.io/KatMods/img/titanes/icon.png",
+      "descarga": "https://kikerayo.github.io/KatMods/descargas/titanes-2.0.0.jar",
+      "detalle": "https://kikerayo.github.io/KatMods/api/mods/titanes.json"
+    }
+  ]
+}
