@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KatMods</title>
+<meta name="description" content="KatMods — catálogo de mods de Minecraft hechos por Oliver.">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0820; --bg2:#160d33; --card:#1b1140; --card-2:#24174f;
+    --line:#3a2a72; --text:#f2ecff; --muted:#b5a8de;
+    --pink:#ff5fd2; --violet:#9b5cff; --cyan:#5fe3ff; --grass:#6fd13a; --dirt:#7a4f2c; --red:#e0303e;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; color:var(--text); background:var(--bg);
+    font-family:"Nunito",system-ui,sans-serif; line-height:1.55;
+    background-image:
+      radial-gradient(1200px 600px at 80% -10%, #3b1a7a55, transparent 60%),
+      radial-gradient(900px 500px at -10% 30%, #a0268a33, transparent 60%);
+    background-attachment:fixed;
+    overflow-x:hidden;
+  }
+  /* estrellas */
+  #stars{position:fixed; inset:0; z-index:-1; pointer-events:none}
+  a{color:inherit}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 16px}
+  h1,h2,h3,.pixel{font-family:"Pixelify Sans",system-ui,sans-serif; letter-spacing:.5px}
+
+  /* nav */
+  nav{position:sticky; top:0; z-index:10; backdrop-filter:blur(10px); background:#0d0820cc; border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex; align-items:center; gap:12px; height:60px}
+  nav .brand{display:flex; align-items:center; gap:10px; text-decoration:none; font-family:"Pixelify Sans"; font-size:22px; font-weight:700}
+  nav .brand img{width:36px; height:36px; object-fit:contain}
+  nav .links{margin-left:auto; display:flex; gap:18px; font-weight:600; font-size:15px}
+  nav .links a{text-decoration:none; color:var(--muted)}
+  nav .links a:hover{color:var(--text)}
+
+  /* hero */
+  .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:32px; align-items:center; padding-block:56px 40px}
+  .hero h1{font-size:clamp(48px,9vw,96px); line-height:1; margin:0 0 14px;
+    background:linear-gradient(90deg,var(--pink),var(--violet) 50%,var(--cyan)); -webkit-background-clip:text; background-clip:text; color:transparent;
+    filter:drop-shadow(0 4px 24px #9b5cff66)}
+  .hero p{font-size:19px; color:var(--muted); max-width:30em; margin:0 0 26px}
+  .hero .logo{width:100%; max-width:420px; justify-self:center; filter:drop-shadow(0 10px 40px #9b5cff88); animation:float 5s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-12px) rotate(-1.5deg)}}
+  .btn{display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:12px; font-weight:800; text-decoration:none; border:0; cursor:pointer; font-size:16px; font-family:inherit}
+  .btn-primary{background:linear-gradient(90deg,var(--pink),var(--violet)); color:#fff; box-shadow:0 6px 24px #ff5fd244}
+  .btn-primary:hover{filter:brightness(1.1)}
+  .btn-ghost{background:transparent; color:var(--text); border:1px solid var(--line)}
+  .btn-ghost:hover{background:var(--card)}
+  .stats{display:flex; gap:28px; margin-top:30px; flex-wrap:wrap}
+  .stats b{display:block; font-family:"Pixelify Sans"; font-size:28px; color:var(--text)}
+  .stats span{color:var(--muted); font-size:14px}
+
+  /* catálogo */
+  section{padding-block:40px}
+  .section-head{display:flex; align-items:end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:22px}
+  .section-head h2{font-size:36px; margin:0}
+  .section-head p{margin:0; color:var(--muted)}
+  .filters{display:flex; gap:8px; flex-wrap:wrap}
+  .chip{background:var(--card); border:1px solid var(--line); color:var(--muted); padding:7px 14px; border-radius:999px; cursor:pointer; font:600 14px "Nunito"}
+  .chip[aria-pressed="true"]{background:var(--violet); color:#fff; border-color:var(--violet)}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr)); gap:22px}
+  .mod{background:linear-gradient(180deg,var(--card-2),var(--card)); border:1px solid var(--line); border-radius:20px; overflow:hidden; display:flex; flex-direction:column; transition:transform .2s, box-shadow .2s}
+  .mod:hover{transform:translateY(-4px); box-shadow:0 14px 40px #00000066, 0 0 0 1px var(--violet)}
+  .mod .banner{height:120px; position:relative; display:flex; align-items:flex-end; padding:0 22px}
+  .mod.mcplus .banner{background:
+      linear-gradient(180deg,transparent 55%,var(--card-2)),
+      repeating-linear-gradient(90deg,#5db82e 0 16px,#6fd13a 16px 32px), #6fd13a;}
+  .mod.titanes .banner{background:
+      linear-gradient(180deg,transparent 40%,var(--card-2)),
+      radial-gradient(circle at 70% 30%,#ff5fd2aa,transparent 40%),
+      radial-gradient(circle at 30% 60%,#5fe3ff88,transparent 45%), #2a0f5a;}
+  .mod .icon{width:84px; height:84px; image-rendering:pixelated; border-radius:16px; background:#0d0820; border:3px solid var(--line); padding:6px; transform:translateY(34px)}
+  .mod .body{padding:44px 22px 22px; display:flex; flex-direction:column; gap:14px; flex:1}
+  .mod h3{font-size:28px; margin:0; line-height:1.1}
+  .mod .by{color:var(--muted); font-size:14px; margin-top:2px}
+  .mod .by b{color:var(--pink)}
+  .tags{display:flex; gap:6px; flex-wrap:wrap}
+  .tag{font-size:12px; font-weight:800; padding:4px 10px; border-radius:999px; background:#ffffff10; border:1px solid var(--line); color:var(--muted)}
+  .tag.v{color:var(--cyan); border-color:#5fe3ff55}
+  .mod p.desc{margin:0; color:#ddd3ff}
+  .features{margin:0; padding:0; list-style:none; display:grid; gap:6px}
+  .features li{padding-left:24px; position:relative; font-size:15px}
+  .features li::before{content:""; position:absolute; left:4px; top:7px; width:10px; height:10px; background:var(--grass); box-shadow:inset -2px -2px 0 #3f8a1d}
+  .mod.titanes .features li::before{background:var(--pink); box-shadow:inset -2px -2px 0 #a3237f}
+  .items{display:grid; grid-template-columns:repeat(auto-fill,minmax(44px,1fr)); gap:6px; background:#0d0820; border:1px solid var(--line); border-radius:12px; padding:10px}
+  .items img{width:100%; aspect-ratio:1; image-rendering:pixelated; background:#ffffff08; border-radius:6px; padding:4px}
+  .items img:hover{background:#ffffff22; transform:scale(1.15)}
+  .actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:auto; padding-top:6px}
+  .size{color:var(--muted); font-size:13px; align-self:center}
+
+  /* instalar */
+  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); gap:16px; counter-reset:s}
+  .step{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px}
+  .step::before{counter-increment:s; content:counter(s); display:grid; place-items:center; width:38px; height:38px; border-radius:10px; background:linear-gradient(135deg,var(--pink),var(--violet)); font:700 20px "Pixelify Sans"; margin-bottom:10px}
+  .step h3{margin:0 0 6px; font-size:20px}
+  .step p{margin:0; color:var(--muted); font-size:15px}
+  code{background:#ffffff14; padding:1px 6px; border-radius:6px; font-size:.92em}
+
+  footer{border-top:1px solid var(--line); margin-top:40px; padding:28px 0; color:var(--muted); font-size:14px}
+  footer .wrap{display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+  footer img{width:40px}
+
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr; text-align:center; padding-block-start:28px}
+    .hero .logo{max-width:260px; order:-1}
+    .hero p{margin-inline:auto}
+    .stats{justify-content:center}
+    nav .links{gap:12px; font-size:14px}
+    nav .links a.hide-sm{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){ .hero .logo{animation:none} html{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><img src="img/logo.webp" alt="">KatMods</a>
+    <div class="links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#instalar">Cómo instalar</a>
+      <a class="hide-sm" href="#autor">Autor</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div>
+    <h1>KatMods</h1>
+    <p>Un catálogo de mods de Minecraft con jefes titánicos, viajes al espacio, gatos cósmicos y muchísimo más. Todos hechos por <b>Oliver</b>.</p>
+    <a class="btn btn-primary" href="#catalogo">Ver los mods ↓</a>
+    <div class="stats">
+      <div><b id="stat-mods">2</b><span>mods</span></div>
+      <div><b>500+</b><span>ítems y bloques</span></div>
+      <div><b>26.2</b><span>Minecraft · Fabric</span></div>
+    </div>
+  </div>
+  <img class="logo" src="img/logo.webp" alt="Logo de KatMods: una gata galáctica con gorro navideño abrazando un bloque de pasto">
+</header>
+
+<main>
+  <section id="catalogo" class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Catálogo</h2>
+        <p>Descarga el <code>.jar</code> y ponlo en tu carpeta <code>mods</code>.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar mods">
+        <button class="chip" aria-pressed="true" data-f="todos">Todos</button>
+        <button class="chip" aria-pressed="false" data-f="aventura">Aventura</button>
+        <button class="chip" aria-pressed="false" data-f="jefes">Jefes</button>
+        <button class="chip" aria-pressed="false" data-f="tecnologia">Tecnología</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Minecraft Plus -->
+      <article class="mod mcplus" data-cat="aventura tecnologia jefes">
+        <div class="banner"><img class="icon" src="img/mcplus/icon.png" alt="Icono de Minecraft Plus"></div>
+        <div class="body">
+          <div>
+            <h3>Minecraft Plus</h3>
+            <div class="by">por <b>Oliver</b></div>
+          </div>
+          <div class="tags">
+            <span class="tag v">v0.6.1</span><span class="tag">Fabric</span><span class="tag">MC 26.2</span><span class="tag">Java 25</span>
+          </div>
+          <p class="desc">El mod universal: añade de todo a Minecraft, desde el End y el espacio hasta tecnología, armas, comida, gatos y desafíos.</p>
+          <ul class="features">
+            <li><b>End Update</b>: Cristal del Vacío, armadura y herramientas del Vacío</li>
+            <li><b>Space Update</b>: cohetes, traje espacial y planetas (Luna, Marte, Venus, Saturno…)</li>
+            <li><b>Update 3</b>: armas, tecnología, Lord Ender y GOD</li>
+            <li><b>Mega Expansión</b>: 5 reinos, dimensiones de bolsillo, Wither Storm, consola con robot, frutas, pepinillos, lentes, pociones, desafíos y logros</li>
+          </ul>
+          <div class="items" aria-label="Algunos ítems de Minecraft Plus">
+            <img src="img/mcplus/vacio_espada.png" alt="Espada del Vacío" title="Espada del Vacío">
+            <img src="img/mcplus/guadana_suprema.png" alt="Guadaña Suprema" title="Guadaña Suprema">
+            <img src="img/mcplus/corona_gatuna.png" alt="Corona Gatuna" title="Corona Gatuna">
+            <img src="img/mcplus/pepinillo_cosmico.png" alt="Pepinillo Cósmico" title="Pepinillo Cósmico">
+            <img src="img/mcplus/lentes_rayos_x.png" alt="Lentes de Rayos X" title="Lentes de Rayos X">
+            <img src="img/mcplus/fruta_estelar_encantada.png" alt="Fruta Estelar Encantada" title="Fruta Estelar Encantada">
+            <img src="img/mcplus/totem_god.png" alt="Tótem de GOD" title="Tótem de GOD">
+            <img src="img/mcplus/celular.png" alt="Celular" title="Celular">
+            <img src="img/mcplus/saco_ultra.png" alt="Saco Ultra" title="Saco Ultra">
+            <img src="img/mcplus/bloque_neon.png" alt="Bloque Neón" title="Bloque Neón">
+            <img src="img/mcplus/dimension_bolsillo.png" alt="Dimensión de Bolsillo" title="Dimensión de Bolsillo">
+            <img src="img/mcplus/traje_casco.png" alt="Casco Espacial" title="Casco Espacial">
+            <img src="img/mcplus/pizza.png" alt="Pizza" title="Pizza">
+            <img src="img/mcplus/sable_pirata.png" alt="Sable Pirata" title="Sable Pirata">
+            <img src="img/mcplus/baston_fenix.png" alt="Bastón del Fénix" title="Bastón del Fénix">
+            <img src="img/mcplus/control_universo.png" alt="Control del Universo" title="Control del Universo">
+            <img src="img/mcplus/huevo_fenix.png" alt="Huevo de Fénix" title="Huevo de Fénix">
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="descargas/mcplus-0.6.1.jar" download>⬇ Descargar</a>
+            <span class="size">mcplus-0.6.1.jar · 1,6 MB</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Titans Mod -->
+      <article class="mod titanes" data-cat="aventura jefes">
+        <div class="banner"><img class="icon" src="img/titanes/icon.png" alt="Icono de Titans Mod"></div>
+        <div class="body">
+          <div>
+            <h3>Titans Mod</h3>
+            <div class="by">por <b>Oliver</b> · <i>Titanes: La Furia de Kat</i></div>
+          </div>
+          <div class="tags">
+            <span class="tag v">v2.0.0</span><span class="tag">Fabric</span><span class="tag">MC 26.2</span><span class="tag">Java 25</span>
+          </div>
+          <p class="desc">Jefes titánicos gigantes, el Titán Kat cósmico como jefe final y nuevas armaduras y herramientas legendarias.</p>
+          <ul class="features">
+            <li><b>Titanes</b>: Gorgoth el Titán Zombi, Osario, la Tejedora Abismal y el Rey Ceniza</li>
+            <li><b>Jefe final</b>: Titán Kat, la Gata Cósmica — láseres, agujeros negros y fases</li>
+            <li><b>Pepinus</b>: Gato Pepino, Gato Pepinus y Pepinus Dios</li>
+            <li><b>Equipo</b>: sets completos de Titanita y Cósmico, Bastón Láser Kat</li>
+          </ul>
+          <div class="items" aria-label="Algunos ítems de Titans Mod">
+            <img src="img/titanes/cosmica_espada.png" alt="Espada Cósmica" title="Espada Cósmica">
+            <img src="img/titanes/cosmico_pico.png" alt="Pico Cósmico" title="Pico Cósmico">
+            <img src="img/titanes/cosmica_hacha.png" alt="Hacha Cósmica" title="Hacha Cósmica">
+            <img src="img/titanes/cosmico_casco.png" alt="Casco Cósmico" title="Casco Cósmico">
+            <img src="img/titanes/cosmico_pechera.png" alt="Pechera Cósmica" title="Pechera Cósmica">
+            <img src="img/titanes/titanita_espada.png" alt="Espada de Titanita" title="Espada de Titanita">
+            <img src="img/titanes/titanita_pico.png" alt="Pico de Titanita" title="Pico de Titanita">
+            <img src="img/titanes/titanita_ingot.png" alt="Lingote de Titanita" title="Lingote de Titanita">
+            <img src="img/titanes/corazon_titan.png" alt="Corazón de Titán" title="Corazón de Titán">
+            <img src="img/titanes/fragmento_estelar.png" alt="Fragmento Estelar" title="Fragmento Estelar">
+            <img src="img/titanes/ovillo_cosmico.png" alt="Ovillo Cósmico" title="Ovillo Cósmico (invoca al Titán Kat)">
+            <img src="img/titanes/baston_laser.png" alt="Bastón Láser Kat" title="Bastón Láser Kat">
+            <img src="img/titanes/cetro_pepinus.png" alt="Cetro de Pepinus" title="Cetro de Pepinus">
+            <img src="img/titanes/pepino_magico.png" alt="Pepino Mágico" title="Pepino Mágico">
+            <img src="img/titanes/titan_kat_spawn_egg.png" alt="Huevo de Titán Kat" title="Huevo de Titán Kat">
+            <img src="img/titanes/titan_zombie_spawn_egg.png" alt="Huevo de Titán Zombi" title="Huevo de Titán Zombi">
+            <img src="img/titanes/pepinus_dios_spawn_egg.png" alt="Huevo de Pepinus Dios" title="Huevo de Pepinus Dios">
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="descargas/titanes-2.0.0.jar" download>⬇ Descargar</a>
+            <span class="size">titanes-2.0.0.jar · 1 MB</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="instalar" class="wrap">
+    <div class="section-head"><h2>Cómo instalar</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Instala Fabric</h3><p>Usa Fabric Loader 0.19+ para Minecraft 26.2 (o tu launcher, como KatLauncher).</p></div>
+      <div class="step"><h3>Añade Fabric API</h3><p>Los dos mods necesitan <b>Fabric API</b> y <b>Java 25</b>.</p></div>
+      <div class="step"><h3>Copia el .jar</h3><p>Pon el archivo descargado en la carpeta <code>mods</code> de tu instancia.</p></div>
+      <div class="step"><h3>¡A jugar!</h3><p>Abre el juego. Consejo: Minecraft Plus y Titans Mod funcionan juntos.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer id="autor">
+  <div class="wrap">
+    <img src="img/logo.webp" alt="">
+    <span><b class="pixel">KatMods</b> · Mods hechos por <b>Oliver</b> · © 2026 · Todos los derechos reservados.</span>
+    <span style="margin-left:auto">No es un producto oficial de Minecraft. No está aprobado ni asociado con Mojang o Microsoft.</span>
+  </div>
+</footer>
+
+<script>
+  // filtros
+  const chips = document.querySelectorAll('.chip');
+  chips.forEach(c => c.addEventListener('click', () => {
+    chips.forEach(x => x.setAttribute('aria-pressed', x === c));
+    const f = c.dataset.f;
+    document.querySelectorAll('.mod').forEach(m => {
+      m.style.display = (f === 'todos' || m.dataset.cat.split(' ').includes(f)) ? '' : 'none';
+    });
+  }));
+
+  // estrellas
+  const cv = document.getElementById('stars'), ctx = cv.getContext('2d');
+  let stars = [];
+  function resize(){
+    cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio;
+    stars = Array.from({length: Math.round(innerWidth*innerHeight/6000)}, () => ({
+      x: Math.random()*cv.width, y: Math.random()*cv.height,
+      r: Math.random()*1.4*devicePixelRatio + .3, p: Math.random()*Math.PI*2,
+      c: ['#ffffff','#ff9be8','#9bdcff','#c9a6ff'][Math.random()*4|0]
+    }));
+  }
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function draw(t){
+    ctx.clearRect(0,0,cv.width,cv.height);
+    for (const s of stars){
+      ctx.globalAlpha = .35 + .65*Math.abs(Math.sin(s.p + t/1400));
+      ctx.fillStyle = s.c; ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,7); ctx.fill();
+    }
+    if (!still) requestAnimationFrame(draw);
+  }
+  addEventListener('resize', resize); resize(); requestAnimationFrame(draw);
+</script>
+</body>
+</html>
