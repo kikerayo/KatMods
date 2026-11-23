@@ -1,5 +1,5 @@
 {
-  "total": 2,
+  "total": 3,
   "mods": [
     {
       "id": "mcplus",
@@ -29,6 +29,20 @@
       "icono": "https://kikerayo.github.io/KatMods/img/titanes/icon.png",
       "descarga": "https://kikerayo.github.io/KatMods/descargas/titanes-2.0.0.jar",
       "detalle": "https://kikerayo.github.io/KatMods/api/mods/titanes.json"
+    },
+    {
+      "id": "oliversupreme",
+      "nombre": "Oliver Supreme",
+      "version": "3.0.0",
+      "autor": "Oliver",
+      "categorias": [
+        "cheats"
+      ],
+      "resumen": "Cheat menu de Oliver con 59 módulos en 4 categorías (Combat, Movement, Render y Player). Se abre con Shift derecho.",
+      "advertencia": "Esto es un cheat menu. Usarlo en servidores multijugador puede hacer que te baneen. Oliver no se hace responsable de los baneos ni de ninguna consecuencia por usar este mod.",
+      "icono": "https://kikerayo.github.io/KatMods/img/oliversupreme/icon.svg",
+      "descarga": "https://kikerayo.github.io/KatMods/descargas/oliversupreme-3.0.0%2B26.2.jar",
+      "detalle": "https://kikerayo.github.io/KatMods/api/mods/oliversupreme.json"
     }
   ]
 }

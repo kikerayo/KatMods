@@ -8,6 +8,7 @@ import hashlib
 import json
 import zipfile
 from pathlib import Path
+from urllib.parse import quote
 
 BASE = "https://kikerayo.github.io/KatMods"
 RAIZ = Path(__file__).parent
@@ -41,6 +42,22 @@ MODS = {
             "Equipo: sets de Titanita y Cósmico, Bastón Láser Kat",
         ],
     },
+    "oliversupreme": {
+        "nombre": "Oliver Supreme",
+        "subtitulo": "Cheat menu",
+        "jar": "oliversupreme-3.0.0+26.2.jar",
+        "version": "3.0.0",
+        "icono": "icon.svg",
+        "categorias": ["cheats"],
+        "resumen": "Cheat menu de Oliver con 59 módulos en 4 categorías (Combat, Movement, Render y Player). Se abre con Shift derecho.",
+        "advertencia": "Esto es un cheat menu. Usarlo en servidores multijugador puede hacer que te baneen. Oliver no se hace responsable de los baneos ni de ninguna consecuencia por usar este mod.",
+        "novedades": [
+            "Combat: KillAura, TriggerBot, AimAssist, Criticals, AutoTotem, Velocity, Reach",
+            "Movement: Fly, Speed, BunnyHop, NoFall, Spider, Jesus, Step, ElytraFly",
+            "Render: ESP, Fullbright, Radar, InfoHUD, ArmorHUD, TargetHUD, Zoom",
+            "Player: Scaffold, Nuker, ChestStealer, AutoTool, AutoEat, AutoFish, AntiAFK",
+        ],
+    },
 }
 
 
@@ -58,6 +75,11 @@ def contenido(jar, modid):
     archivos = set(jar.namelist())
     grupos = {"block": "bloques", "item": "items", "entity": "entidades"}
     salida = {v: [] for v in grupos.values()}
+    # Cheat menus: cada tecla "key.<modid>.<modulo>" es un módulo.
+    modulos = [n for k, n in lang.items()
+               if k.startswith(f"key.{modid}.") and not k.endswith((".menu", ".main"))]
+    if modulos:
+        salida["modulos"] = sorted(modulos, key=str.lower)
     for clave, nombre in sorted(lang.items()):
         partes = clave.split(".")
         if len(partes) != 3 or partes[0] not in grupos or partes[1] != modid:
@@ -70,6 +92,8 @@ def contenido(jar, modid):
         salida[grupos[tipo]].append(entrada)
     for lista in salida.values():
         for e in lista:
+            if not isinstance(e, dict):
+                continue
             if e.get("textura") is None:
                 e.pop("textura", None)
     return salida
@@ -91,8 +115,9 @@ def main():
             "autor": "Oliver",
             "categorias": info["categorias"],
             "resumen": info["resumen"],
-            "icono": f"{BASE}/img/{modid}/icon.png",
-            "descarga": f"{BASE}/descargas/{info['jar']}",
+            **({"advertencia": info["advertencia"]} if "advertencia" in info else {}),
+            "icono": f"{BASE}/img/{modid}/{info.get('icono', 'icon.png')}",
+            "descarga": f"{BASE}/descargas/{quote(info['jar'])}",
             "detalle": f"{BASE}/api/mods/{modid}.json",
         }
         resumenes.append(resumen)
@@ -102,6 +127,7 @@ def main():
             **({"subtitulo": info["subtitulo"]} if "subtitulo" in info else {}),
             "descripcion": meta.get("description", ""),
             "loader": "fabric",
+            "lado": meta.get("environment", "*"),
             "requisitos": meta.get("depends", {}),
             "sugiere": list(meta.get("suggests", {}).keys()),
             "licencia": meta.get("license"),
@@ -109,7 +135,7 @@ def main():
             "totales": {k: len(v) for k, v in cont.items()},
             "archivo": {
                 "nombre": info["jar"],
-                "url": f"{BASE}/descargas/{info['jar']}",
+                "url": f"{BASE}/descargas/{quote(info['jar'])}",
                 "bytes": len(datos_jar),
                 "sha256": hashlib.sha256(datos_jar).hexdigest(),
             },

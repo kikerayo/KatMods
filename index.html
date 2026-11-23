@@ -94,6 +94,17 @@
   .items{display:grid; grid-template-columns:repeat(auto-fill,minmax(44px,1fr)); gap:6px; background:#0d0820; border:1px solid var(--line); border-radius:12px; padding:10px}
   .items img{width:100%; aspect-ratio:1; image-rendering:pixelated; background:#ffffff08; border-radius:6px; padding:4px}
   .items img:hover{background:#ffffff22; transform:scale(1.15)}
+  .mod.supreme .banner{background:
+      linear-gradient(180deg,transparent 40%,var(--card-2)),
+      repeating-linear-gradient(135deg,#ffd23f22 0 14px,transparent 14px 28px), #3a0a1e;}
+  .mod.supreme{border-color:#ff3b5c88}
+  .mod.supreme .features li::before{background:#ffd23f; box-shadow:inset -2px -2px 0 #b38a00}
+  .tag.cheat{color:#ffd23f; border-color:#ffd23f88; background:#ffd23f14}
+  .aviso{background:#ff3b5c1a; border:1px solid #ff3b5c; border-left:6px solid #ff3b5c; border-radius:12px; padding:12px 14px; font-size:14.5px}
+  .aviso strong{display:block; color:#ff8098; font-family:"Pixelify Sans"; font-size:18px; letter-spacing:.5px; margin-bottom:4px}
+  .aviso p{margin:0 0 6px} .aviso p:last-child{margin:0}
+  .modulos{display:flex; flex-wrap:wrap; gap:6px}
+  .modulos span{font:600 12px "Nunito"; padding:3px 9px; border-radius:6px; background:#0d0820; border:1px solid var(--line); color:#ddd3ff}
   .actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:auto; padding-top:6px}
   .size{color:var(--muted); font-size:13px; align-self:center}
 
@@ -140,7 +151,7 @@
     <p>Un catálogo de mods de Minecraft con jefes titánicos, viajes al espacio, gatos cósmicos y muchísimo más. Todos hechos por <b>Oliver</b>.</p>
     <a class="btn btn-primary" href="#catalogo">Ver los mods ↓</a>
     <div class="stats">
-      <div><b id="stat-mods">2</b><span>mods</span></div>
+      <div><b id="stat-mods">3</b><span>mods</span></div>
       <div><b>500+</b><span>ítems y bloques</span></div>
       <div><b>26.2</b><span>Minecraft · Fabric</span></div>
     </div>
@@ -160,6 +171,7 @@
         <button class="chip" aria-pressed="false" data-f="aventura">Aventura</button>
         <button class="chip" aria-pressed="false" data-f="jefes">Jefes</button>
         <button class="chip" aria-pressed="false" data-f="tecnologia">Tecnología</button>
+        <button class="chip" aria-pressed="false" data-f="cheats">Cheats</button>
       </div>
     </div>
 
@@ -248,6 +260,36 @@
           <div class="actions">
             <a class="btn btn-primary" href="descargas/titanes-2.0.0.jar" download>⬇ Descargar</a>
             <span class="size">titanes-2.0.0.jar · 1 MB</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Oliver Supreme (cheat menu) -->
+      <article class="mod supreme" data-cat="cheats">
+        <div class="banner"><img class="icon" src="img/oliversupreme/icon.svg" alt="Icono de Oliver Supreme"></div>
+        <div class="body">
+          <div>
+            <h3>Oliver Supreme</h3>
+            <div class="by">por <b>Oliver</b> · <i>Cheat menu</i></div>
+          </div>
+          <div class="tags">
+            <span class="tag v">v3.0.0</span><span class="tag cheat">⚠ Cheat menu</span><span class="tag">Fabric</span><span class="tag">MC 26.2</span><span class="tag">Solo cliente</span>
+          </div>
+          <div class="aviso" role="note">
+            <strong>⚠ Advertencia: esto es un cheat menu</strong>
+            <p>Oliver Supreme es un cliente de trucos. Usarlo en servidores multijugador va contra las reglas de la mayoría de servidores y puede hacer que te <b>baneen</b>.</p>
+            <p><b>Oliver no se hace responsable de los baneos</b> ni de ninguna consecuencia por usar este mod. Úsalo bajo tu propio riesgo; lo recomendable es usarlo solo en mundos de un jugador o servidores propios.</p>
+          </div>
+          <p class="desc">El cliente de Oliver: un menú con 59 módulos en 4 categorías. Se abre con <code>Shift derecho</code>.</p>
+          <ul class="features">
+            <li><b>Combat</b>: KillAura, TriggerBot, AimAssist, Criticals, AutoTotem, Velocity, Reach…</li>
+            <li><b>Movement</b>: Fly, Speed, BunnyHop, NoFall, Spider, Jesus, Step, ElytraFly…</li>
+            <li><b>Render</b>: ESP, Fullbright, Radar, InfoHUD, ArmorHUD, TargetHUD, Zoom…</li>
+            <li><b>Player</b>: Scaffold, Nuker, ChestStealer, AutoTool, AutoEat, AutoFish, AntiAFK…</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="descargas/oliversupreme-3.0.0%2B26.2.jar" download>⬇ Descargar</a>
+            <span class="size">oliversupreme-3.0.0+26.2.jar · 75 KB</span>
           </div>
         </div>
       </article>

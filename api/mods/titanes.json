@@ -13,6 +13,7 @@
   "subtitulo": "Titanes: La Furia de Kat",
   "descripcion": "Jefes titánicos gigantes, el Titán Kat cósmico como jefe final, y nuevas armaduras y herramientas.",
   "loader": "fabric",
+  "lado": "*",
   "requisitos": {
     "fabricloader": ">=0.19.0",
     "minecraft": "~26.2",
