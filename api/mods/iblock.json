@@ -1,0 +1,42 @@
+{
+  "id": "iblock",
+  "nombre": "iBlock",
+  "version": "1.0.0",
+  "autor": "Oliver",
+  "categorias": [
+    "tecnologia"
+  ],
+  "resumen": "Un iPhone dentro de Minecraft con TikTok, Instagram, Facebook, App Store, Siri y Minecraft dentro de Minecraft, internet de verdad en el teléfono y la laptop, más una tele con canales.",
+  "icono": "https://kikerayo.github.io/KatMods/img/iblock/icon.png",
+  "descarga": "https://kikerayo.github.io/KatMods/descargas/iblock-1.0.0.jar",
+  "subtitulo": "Teléfono, Laptop y Tele",
+  "descripcion": "Un iPhone en Minecraft (TikTok, Instagram, Facebook, App Store, Siri, Minecraft dentro de Minecraft) con internet de verdad, más una laptop y una tele.",
+  "loader": "fabric",
+  "lado": "*",
+  "requisitos": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "sugiere": [],
+  "licencia": "All-Rights-Reserved",
+  "novedades": [
+    "iBlock 26 Pro Max: TikTok, Instagram, Facebook, App Store, Cámara y Ajustes",
+    "Siri cambia el mundo de verdad: día/noche, lluvia, rayos, diamantes, comida y más",
+    "Internet real en el teléfono y la laptop: páginas, links, imágenes y búsquedas",
+    "Laptop con escritorio y ventanas, Tele con 11 canales y control remoto, y Minecraft 2D jugable"
+  ],
+  "totales": {
+    "bloques": 2,
+    "items": 1,
+    "entidades": 0
+  },
+  "archivo": {
+    "nombre": "iblock-1.0.0.jar",
+    "url": "https://kikerayo.github.io/KatMods/descargas/iblock-1.0.0.jar",
+    "bytes": 146670,
+    "sha256": "5780cabe45b04a356d7d850dff57f55b16f9046aea51bf4b2c18bdafbe33d784"
+  },
+  "contenido": "https://kikerayo.github.io/KatMods/api/mods/iblock/contenido.json"
+}

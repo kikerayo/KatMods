@@ -71,6 +71,20 @@ MODS = {
             "Punto débil: al digerir recibe el triple de daño",
         ],
     },
+    "iblock": {
+        "nombre": "iBlock",
+        "subtitulo": "Teléfono, Laptop y Tele",
+        "jar": "iblock-1.0.0.jar",
+        "version": "1.0.0",
+        "categorias": ["tecnologia"],
+        "resumen": "Un iPhone dentro de Minecraft con TikTok, Instagram, Facebook, App Store, Siri y Minecraft dentro de Minecraft, internet de verdad en el teléfono y la laptop, más una tele con canales.",
+        "novedades": [
+            "iBlock 26 Pro Max: TikTok, Instagram, Facebook, App Store, Cámara y Ajustes",
+            "Siri cambia el mundo de verdad: día/noche, lluvia, rayos, diamantes, comida y más",
+            "Internet real en el teléfono y la laptop: páginas, links, imágenes y búsquedas",
+            "Laptop con escritorio y ventanas, Tele con 11 canales y control remoto, y Minecraft 2D jugable",
+        ],
+    },
 }
 
 

@@ -1,5 +1,5 @@
 {
-  "total": 4,
+  "total": 5,
   "mods": [
     {
       "id": "mcplus",
@@ -56,6 +56,19 @@
       "icono": "https://kikerayo.github.io/KatMods/img/devorador/icon.png",
       "descarga": "https://kikerayo.github.io/KatMods/descargas/devorador-1.0.0.jar",
       "detalle": "https://kikerayo.github.io/KatMods/api/mods/devorador.json"
+    },
+    {
+      "id": "iblock",
+      "nombre": "iBlock",
+      "version": "1.0.0",
+      "autor": "Oliver",
+      "categorias": [
+        "tecnologia"
+      ],
+      "resumen": "Un iPhone dentro de Minecraft con TikTok, Instagram, Facebook, App Store, Siri y Minecraft dentro de Minecraft, internet de verdad en el teléfono y la laptop, más una tele con canales.",
+      "icono": "https://kikerayo.github.io/KatMods/img/iblock/icon.png",
+      "descarga": "https://kikerayo.github.io/KatMods/descargas/iblock-1.0.0.jar",
+      "detalle": "https://kikerayo.github.io/KatMods/api/mods/iblock.json"
     }
   ]
 }

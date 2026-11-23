@@ -1,0 +1,21 @@
+{
+  "mod": "iblock",
+  "bloques": [
+    {
+      "id": "iblock:laptop",
+      "nombre": "Laptop"
+    },
+    {
+      "id": "iblock:tv",
+      "nombre": "Tele"
+    }
+  ],
+  "items": [
+    {
+      "id": "iblock:iblock",
+      "nombre": "iBlock 26 Pro Max",
+      "textura": "https://kikerayo.github.io/KatMods/img/iblock/iblock.png"
+    }
+  ],
+  "entidades": []
+}
