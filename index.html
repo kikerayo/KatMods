@@ -94,6 +94,12 @@
   .items{display:grid; grid-template-columns:repeat(auto-fill,minmax(44px,1fr)); gap:6px; background:#0d0820; border:1px solid var(--line); border-radius:12px; padding:10px}
   .items img{width:100%; aspect-ratio:1; image-rendering:pixelated; background:#ffffff08; border-radius:6px; padding:4px}
   .items img:hover{background:#ffffff22; transform:scale(1.15)}
+  .mod.devorador .banner{background:
+      linear-gradient(180deg,transparent 40%,var(--card-2)),
+      linear-gradient(112deg,transparent 30%,#b040ff66 31% 35%,transparent 36%),
+      linear-gradient(68deg,transparent 58%,#b040ff55 59% 63%,transparent 64%),
+      radial-gradient(circle at 50% 10%,#b040ff55,transparent 45%), #120818;}
+  .mod.devorador .features li::before{background:#b040ff; box-shadow:inset -2px -2px 0 #6a1a9c}
   .mod.supreme .banner{background:
       linear-gradient(180deg,transparent 40%,var(--card-2)),
       repeating-linear-gradient(135deg,#ffd23f22 0 14px,transparent 14px 28px), #3a0a1e;}
@@ -151,7 +157,7 @@
     <p>Un catálogo de mods de Minecraft con jefes titánicos, viajes al espacio, gatos cósmicos y muchísimo más. Todos hechos por <b>Oliver</b>.</p>
     <a class="btn btn-primary" href="#catalogo">Ver los mods ↓</a>
     <div class="stats">
-      <div><b id="stat-mods">3</b><span>mods</span></div>
+      <div><b id="stat-mods">4</b><span>mods</span></div>
       <div><b>500+</b><span>ítems y bloques</span></div>
       <div><b>26.2</b><span>Minecraft · Fabric</span></div>
     </div>
@@ -260,6 +266,37 @@
           <div class="actions">
             <a class="btn btn-primary" href="descargas/titanes-2.0.0.jar" download>⬇ Descargar</a>
             <span class="size">titanes-2.0.0.jar · 1 MB</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Oliver's Devorador -->
+      <article class="mod devorador" data-cat="jefes">
+        <div class="banner"><img class="icon" src="img/devorador/icon.png" alt="Icono de Oliver's Devorador"></div>
+        <div class="body">
+          <div>
+            <h3>Oliver's Devorador</h3>
+            <div class="by">por <b>Oliver</b></div>
+          </div>
+          <div class="tags">
+            <span class="tag v">v1.0.0</span><span class="tag">Fabric</span><span class="tag">MC 26.2</span><span class="tag">Java 25</span>
+          </div>
+          <p class="desc">Un wither corrompido y gigante que arranca el terreno con rayos tractores morados, se come lo que levanta y crece hasta medir unos 30 bloques de alto.</p>
+          <ul class="features">
+            <li><b>Ritual</b>: una T de obsidiana llorosa con 3 cráneos de esqueleto wither encima</li>
+            <li><b>Rayos tractores</b>: arrancan bloques (incluso del fondo del mar) y jalan mobs y jugadores</li>
+            <li><b>4 fases</b>: Brote, Hambriento, Colosal y Devorador Supremo, con hasta 3 rayos y un rugido</li>
+            <li><b>Punto débil</b>: cuando se detiene a digerir recibe el triple de daño</li>
+          </ul>
+          <div class="items" aria-label="Texturas de Oliver's Devorador">
+            <img src="img/devorador/devorador.png" alt="Devorador" title="Devorador">
+            <img src="img/devorador/devorador_carga.png" alt="Devorador cargándose" title="Devorador cargándose (al invocarlo)">
+            <img src="img/devorador/devorador_digiere.png" alt="Devorador digiriendo" title="Devorador digiriendo (¡ataca ahora!)">
+            <img src="img/devorador/rayo_tractor.png" alt="Rayo tractor" title="Rayo tractor">
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="descargas/devorador-1.0.0.jar" download>⬇ Descargar</a>
+            <span class="size">devorador-1.0.0.jar · 42 KB</span>
           </div>
         </div>
       </article>

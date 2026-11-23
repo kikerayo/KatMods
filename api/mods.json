@@ -1,5 +1,5 @@
 {
-  "total": 3,
+  "total": 4,
   "mods": [
     {
       "id": "mcplus",
@@ -43,6 +43,19 @@
       "icono": "https://kikerayo.github.io/KatMods/img/oliversupreme/icon.svg",
       "descarga": "https://kikerayo.github.io/KatMods/descargas/oliversupreme-3.0.0%2B26.2.jar",
       "detalle": "https://kikerayo.github.io/KatMods/api/mods/oliversupreme.json"
+    },
+    {
+      "id": "devorador",
+      "nombre": "Oliver's Devorador",
+      "version": "1.0.0",
+      "autor": "Oliver",
+      "categorias": [
+        "jefes"
+      ],
+      "resumen": "Un wither corrompido y gigante que arranca el terreno con rayos tractores morados, se come lo que levanta y crece en 4 fases. Se invoca con una T de obsidiana llorosa y 3 cráneos de esqueleto wither.",
+      "icono": "https://kikerayo.github.io/KatMods/img/devorador/icon.png",
+      "descarga": "https://kikerayo.github.io/KatMods/descargas/devorador-1.0.0.jar",
+      "detalle": "https://kikerayo.github.io/KatMods/api/mods/devorador.json"
     }
   ]
 }

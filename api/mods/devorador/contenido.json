@@ -1,0 +1,12 @@
+{
+  "mod": "devorador",
+  "bloques": [],
+  "items": [],
+  "entidades": [
+    {
+      "id": "devorador:devorador",
+      "nombre": "Devorador",
+      "textura": "https://kikerayo.github.io/KatMods/img/devorador/devorador.png"
+    }
+  ]
+}

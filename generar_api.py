@@ -58,6 +58,19 @@ MODS = {
             "Player: Scaffold, Nuker, ChestStealer, AutoTool, AutoEat, AutoFish, AntiAFK",
         ],
     },
+    "devorador": {
+        "nombre": "Oliver's Devorador",
+        "jar": "devorador-1.0.0.jar",
+        "version": "1.0.0",
+        "categorias": ["jefes"],
+        "resumen": "Un wither corrompido y gigante que arranca el terreno con rayos tractores morados, se come lo que levanta y crece en 4 fases. Se invoca con una T de obsidiana llorosa y 3 cráneos de esqueleto wither.",
+        "novedades": [
+            "Ritual: T de obsidiana llorosa + 3 cráneos de esqueleto wither",
+            "Rayos tractores que arrancan bloques y jalan mobs y jugadores",
+            "4 fases: Brote, Hambriento, Colosal y Supremo (unos 30 bloques de alto)",
+            "Punto débil: al digerir recibe el triple de daño",
+        ],
+    },
 }
 
 

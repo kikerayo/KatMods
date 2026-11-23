@@ -1,0 +1,41 @@
+{
+  "id": "devorador",
+  "nombre": "Oliver's Devorador",
+  "version": "1.0.0",
+  "autor": "Oliver",
+  "categorias": [
+    "jefes"
+  ],
+  "resumen": "Un wither corrompido y gigante que arranca el terreno con rayos tractores morados, se come lo que levanta y crece en 4 fases. Se invoca con una T de obsidiana llorosa y 3 cráneos de esqueleto wither.",
+  "icono": "https://kikerayo.github.io/KatMods/img/devorador/icon.png",
+  "descarga": "https://kikerayo.github.io/KatMods/descargas/devorador-1.0.0.jar",
+  "descripcion": "El Devorador: un wither corrompido que arranca el terreno con rayos tractores, se lo come y crece. Invócalo con una T de obsidiana llorosa y 3 cráneos de esqueleto wither.",
+  "loader": "fabric",
+  "lado": "*",
+  "requisitos": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "sugiere": [],
+  "licencia": "All-Rights-Reserved",
+  "novedades": [
+    "Ritual: T de obsidiana llorosa + 3 cráneos de esqueleto wither",
+    "Rayos tractores que arrancan bloques y jalan mobs y jugadores",
+    "4 fases: Brote, Hambriento, Colosal y Supremo (unos 30 bloques de alto)",
+    "Punto débil: al digerir recibe el triple de daño"
+  ],
+  "totales": {
+    "bloques": 0,
+    "items": 0,
+    "entidades": 1
+  },
+  "archivo": {
+    "nombre": "devorador-1.0.0.jar",
+    "url": "https://kikerayo.github.io/KatMods/descargas/devorador-1.0.0.jar",
+    "bytes": 42907,
+    "sha256": "0eca32f4b584898e06facdd43efd7ba0d2622f9fe3553f4216e860e9aa7cf865"
+  },
+  "contenido": "https://kikerayo.github.io/KatMods/api/mods/devorador/contenido.json"
+}
