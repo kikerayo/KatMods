@@ -1,5 +1,5 @@
 {
-  "total": 5,
+  "total": 6,
   "mods": [
     {
       "id": "mcplus",
@@ -69,6 +69,20 @@
       "icono": "https://kikerayo.github.io/KatMods/img/iblock/icon.png",
       "descarga": "https://kikerayo.github.io/KatMods/descargas/iblock-1.0.0.jar",
       "detalle": "https://kikerayo.github.io/KatMods/api/mods/iblock.json"
+    },
+    {
+      "id": "comandedwither",
+      "nombre": "Comanded Wither",
+      "version": "1.0.0",
+      "autor": "Oliver",
+      "categorias": [
+        "jefes",
+        "aventura"
+      ],
+      "resumen": "Un Wither con un bloque de comandos que devora el terreno y evoluciona como el Wither Storm: 13 fases, rayos tractores, Withered Symbiont, Formidi-Bomb, las Bowels con la pelea final, la casa en ruinas, Infinite Grow y efectos de sonido propios.",
+      "icono": "https://kikerayo.github.io/KatMods/img/comandedwither/icon.png",
+      "descarga": "https://kikerayo.github.io/KatMods/descargas/comandedwither-1.0.0.jar",
+      "detalle": "https://kikerayo.github.io/KatMods/api/mods/comandedwither.json"
     }
   ]
 }

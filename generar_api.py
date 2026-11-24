@@ -85,6 +85,20 @@ MODS = {
             "Laptop con escritorio y ventanas, Tele con 11 canales y control remoto, y Minecraft 2D jugable",
         ],
     },
+    "comandedwither": {
+        "nombre": "Comanded Wither",
+        "subtitulo": "El Wither Storm de Oliver",
+        "jar": "comandedwither-1.0.0.jar",
+        "version": "1.0.0",
+        "categorias": ["jefes", "aventura"],
+        "resumen": "Un Wither con un bloque de comandos que devora el terreno y evoluciona como el Wither Storm: 13 fases, rayos tractores, Withered Symbiont, Formidi-Bomb, las Bowels con la pelea final, la casa en ruinas, Infinite Grow y efectos de sonido propios.",
+        "novedades": [
+            "13 fases: Wither, joroba, cíclope, tentáculos, Juggernaut, Destroyer, Devourer, Split, 6.5 y World Eater",
+            "Rayos tractores que salen de los ojos, barren el suelo y te jalan; barra de jefe naranja y se ve desde 50.000 bloques",
+            "Withered Symbiont, Libro del Bloque de Comandos, Super TNT y Formidi-Bomb: se parte en 3 y vuelve a levantarse",
+            "Las Bowels: entra por el agujero con una perla de ender y destruye el Bloque de Comandos con la Herramienta de Bloque de Comandos",
+        ],
+    },
 }
 
 

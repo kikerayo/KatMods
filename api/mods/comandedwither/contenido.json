@@ -1,0 +1,70 @@
+{
+  "mod": "comandedwither",
+  "bloques": [
+    {
+      "id": "comandedwither:formidi_bomb",
+      "nombre": "Formidi-Bomb"
+    }
+  ],
+  "items": [
+    {
+      "id": "comandedwither:comanded_wither_spawn_egg",
+      "nombre": "Huevo de Comanded Wither",
+      "textura": "https://kikerayo.github.io/KatMods/img/comandedwither/comanded_wither_spawn_egg.png"
+    },
+    {
+      "id": "comandedwither:command_block_book",
+      "nombre": "Libro del Bloque de Comandos",
+      "textura": "https://kikerayo.github.io/KatMods/img/comandedwither/command_block_book.png"
+    },
+    {
+      "id": "comandedwither:super_tnt",
+      "nombre": "Super TNT",
+      "textura": "https://kikerayo.github.io/KatMods/img/comandedwither/super_tnt.png"
+    },
+    {
+      "id": "comandedwither:withered_nether_star",
+      "nombre": "Estrella del Nether marchita",
+      "textura": "https://kikerayo.github.io/KatMods/img/comandedwither/withered_nether_star.png"
+    },
+    {
+      "id": "comandedwither:withered_symbiont_spawn_egg",
+      "nombre": "Huevo de Withered Symbiont",
+      "textura": "https://kikerayo.github.io/KatMods/img/comandedwither/withered_symbiont_spawn_egg.png"
+    }
+  ],
+  "entidades": [
+    {
+      "id": "comandedwither:bowel_head",
+      "nombre": "Cabeza del Comanded Wither"
+    },
+    {
+      "id": "comandedwither:comanded_wither",
+      "nombre": "Comanded Wither"
+    },
+    {
+      "id": "comandedwither:command_core",
+      "nombre": "Bloque de Comandos"
+    },
+    {
+      "id": "comandedwither:eaten_block",
+      "nombre": "Bloque devorado"
+    },
+    {
+      "id": "comandedwither:final_core",
+      "nombre": "Bloque de Comandos"
+    },
+    {
+      "id": "comandedwither:formidi_bomb",
+      "nombre": "Formidi-Bomb encendida"
+    },
+    {
+      "id": "comandedwither:storm_piece",
+      "nombre": "Pedazo del Comanded Wither"
+    },
+    {
+      "id": "comandedwither:withered_symbiont",
+      "nombre": "Withered Symbiont"
+    }
+  ]
+}
